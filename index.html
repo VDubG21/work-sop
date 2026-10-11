@@ -199,11 +199,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <h2>What changed in this revision</h2>
       <p>11 Oct 2026. The same changes are highlighted in blue on the page.</p>
       <ul>
-        <li>Abusive customers: cut from six levels to three (tense, personal abuse, severe).</li>
-        <li>Removed the lead, the manager escalation, the threats-to-a-person level and the authorities line. Pressure and extortion is handled in chapter 1.</li>
-        <li>Abuse now means a Live Chat ban only. No Warehouse ban unless the customer is a scammer. They keep their rights, by email.</li>
-        <li>Removed the debrief section. A separate operator well-being section is listed as open.</li>
-        <li>Decision log row for abusive customers updated.</li>
+        <li>Abusive customers, level 1: a small reminder to stay on the subject (we are here to help, not to listen to complaints) replaces "no warning needed".</li>
       </ul>
     </div>
     <!--/CHANGES-->
@@ -233,8 +229,8 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <p class="sub">Still open, needs a decision</p>
       <ol class="open-list" start="8">
         <li class="open-item">Set up the Blacklist group in PrestaShop, so a block actually stops a customer from buying.</li>
-        <li class="open-item"><mark class="chg" id="chg-1">Tag every closed abusive chat in Live Chat by level? To be looked into.</mark></li>
-        <li class="open-item"><mark class="chg" id="chg-2">Operator well-being section: burnout, and passing a chat to another operator instead of arguing with the customer.</mark></li>
+        <li class="open-item">Tag every closed abusive chat in Live Chat by level? To be looked into.</li>
+        <li class="open-item">Operator well-being section: burnout, and passing a chat to another operator instead of arguing with the customer.</li>
       </ol>
     </div>
 
@@ -390,7 +386,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
 
     <section class="card" id="abuse">
       <h2>Abusive customers</h2>
-      <p class="lede"><mark class="chg" id="chg-3">Frustration is not abuse. Find the level, then do what the last column says. There are three levels.</mark></p>
+      <p class="lede">Frustration is not abuse. Find the level, then do what the last column says. There are three levels.</p>
 
       <div class="scale" aria-hidden="true">
         <i style="background:var(--l1)"></i><i style="background:var(--l3)"></i><i style="background:var(--l4a)"></i>
@@ -400,20 +396,20 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
         <table>
           <thead><tr><th>Level</th><th>Type</th><th>Examples</th><th>What you do</th></tr></thead>
           <tbody>
-            <tr class="lvl l1"><td><span class="badge">1</span></td><td><mark class="chg" id="chg-4">Tense</mark></td><td><mark class="chg" id="chg-5">Frustration, rude tone, caps lock, sarcasm, swearing about the shop or the situation: "I've waited two days", "this is unacceptable"</mark></td><td><mark class="chg" id="chg-6">Not abuse. Stay polite, apologize for the wait, give a clear timeline and solve the problem. No warning needed.</mark></td></tr>
-            <tr class="lvl l3"><td><span class="badge">2</span></td><td><mark class="chg" id="chg-7">Personal abuse</mark></td><td><mark class="chg" id="chg-8">Insults aimed at you, mocking, spamming, continuing after a reminder</mark></td><td><mark class="chg" id="chg-9">Send a boundary message, then</mark> <span class="mgr"><mark class="chg" id="chg-10">one final warning</mark></span><mark class="chg" id="chg-11">. If it continues, ban the customer in Live Chat. They can continue by email.</mark> <span class="tag mgr-tag">Manager can change</span></td></tr>
-            <tr class="lvl l4a"><td><span class="badge">3</span></td><td><mark class="chg" id="chg-12">Severe</mark></td><td><mark class="chg" id="chg-13">Sexual comments, slurs, discriminatory language, targeting you by name</mark></td><td><mark class="chg" id="chg-14">Skip the ladder. Ban in Live Chat right away and save the chat as evidence.</mark></td></tr>
+            <tr class="lvl l1"><td><span class="badge">1</span></td><td>Tense</td><td>Frustration, rude tone, caps lock, sarcasm, swearing about the shop or the situation: "I've waited two days", "this is unacceptable"</td><td>Not abuse yet. Stay polite and give a clear timeline, then <mark class="chg" id="chg-1">bring the customer back to the subject with a small reminder: we are here to solve the problem, not to listen to complaints. It is a gentle nudge, not a formal warning.</mark></td></tr>
+            <tr class="lvl l3"><td><span class="badge">2</span></td><td>Personal abuse</td><td>Insults aimed at you, mocking, spamming, continuing after a reminder</td><td>Send a boundary message, then <span class="mgr">one final warning</span>. If it continues, ban the customer in Live Chat. They can continue by email. <span class="tag mgr-tag">Manager can change</span></td></tr>
+            <tr class="lvl l4a"><td><span class="badge">3</span></td><td>Severe</td><td>Sexual comments, slurs, discriminatory language, targeting you by name</td><td>Skip the ladder. Ban in Live Chat right away and save the chat as evidence.</td></tr>
           </tbody>
         </table>
       </div>
 
-      <p><mark class="chg" id="chg-15">Repeated abuse across channels (chat, email, reviews) or aimed at one operator by name is treated as level 3.</mark></p>
+      <p>Repeated abuse across channels (chat, email, reviews) or aimed at one operator by name is treated as level 3.</p>
 
       <h3>Rules at every level</h3>
       <div class="rule-grid">
         <div class="rule"><strong>Their order rights don't change</strong><p>Warranty and refund eligibility never depend on behavior. Only the channel changes, from chat to email.</p></div>
-        <div class="rule"><strong><mark class="chg" id="chg-16">Abuse is not a reason to refund</mark></strong><p><mark class="chg" id="chg-17">Insults do not count as an angry-customer trigger. Refunds follow the rules in chapter 1.</mark></p></div>
-        <div class="rule"><strong><mark class="chg" id="chg-18">Live Chat ban only</mark></strong><p><mark class="chg" id="chg-19">No Warehouse ban and no group for abuse. Those are only for scammers and resellers (chapter 1).</mark></p></div>
+        <div class="rule"><strong>Abuse is not a reason to refund</strong><p>Insults do not count as an angry-customer trigger. Refunds follow the rules in chapter 1.</p></div>
+        <div class="rule"><strong>Live Chat ban only</strong><p>No Warehouse ban and no group for abuse. Those are only for scammers and resellers (chapter 1).</p></div>
       </div>
 
       <div class="callout warn">
@@ -431,7 +427,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
             <tr><td>1 Oct 2026</td><td>Failed replacement, refund limit</td><td>Refund only within 3 months. Warranty means replacement.</td><td><span class="mgr">To be confirmed</span></td></tr>
             <tr><td>1 Oct 2026</td><td>G2A order, credentials changed</td><td>Offer assistance (2FA code), not an automatic replacement.</td><td>Manager</td></tr>
             <tr><td>1 Oct 2026</td><td>Blocked and banned customers</td><td>Ban in Warehouse (for our statistics and so every operator knows about the customer) and always add to a group with the reason. Block in PrestaShop (the Blacklist group) with a note in the customer profile once the group is set up. A block after a ban is not mandatory.</td><td><span class="mgr">To be confirmed</span></td></tr>
-            <tr><td>1 Oct 2026</td><td>Abusive customers</td><td><mark class="chg" id="chg-20">Three levels. Boundary message, final warning, then ban in Live Chat. No Warehouse ban unless a scammer. Order rights stay, by email only.</mark></td><td><span class="mgr">To be confirmed</span></td></tr>
+            <tr><td>1 Oct 2026</td><td>Abusive customers</td><td>Three levels. Boundary message, final warning, then ban in Live Chat. No Warehouse ban unless a scammer. Order rights stay, by email only.</td><td><span class="mgr">To be confirmed</span></td></tr>
           </tbody>
         </table>
       </div>
