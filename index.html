@@ -9,43 +9,43 @@
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
-box-sizing: border-box;
-padding-top: env(safe-area-inset-top, 0px);
-padding-bottom: env(safe-area-inset-bottom, 0px);
---bg: #eef1f6;
---surface: #ffffff;
---surface-2: #f6f8fb;
---ink: #16213a;
---ink-soft: #4d5a73;
---line: #d9dfea;
---brand: #0e7c86;
---brand-tint: #dff1f2;
---mgr: #b86e00;
---mgr-bg: #fff3d6;
---mgr-line: #e8a62b;
---open: #6a3fc4;
---open-bg: #ece6fa;
---open-line: #a98be6;
---chg: #0b5cad; --chg-bg: #d6eaff; --chg-line: #4a90e2;
---l0: #2f8f5b; --l1: #7d9a1a; --l2: #c99400; --l3: #dc6a1c; --l4a: #cf3434; --l4b: #a8296c; --l5: #6e1f35;
---heading: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
---body: "Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  --bg: #eef1f6;
+  --surface: #ffffff;
+  --surface-2: #f6f8fb;
+  --ink: #16213a;
+  --ink-soft: #4d5a73;
+  --line: #d9dfea;
+  --brand: #0e7c86;
+  --brand-tint: #dff1f2;
+  --mgr: #b86e00;
+  --mgr-bg: #fff3d6;
+  --mgr-line: #e8a62b;
+  --open: #6a3fc4;
+  --open-bg: #ece6fa;
+  --open-line: #a98be6;
+  --chg: #0b5cad; --chg-bg: #d6eaff; --chg-line: #4a90e2;
+  --l0: #2f8f5b; --l1: #7d9a1a; --l2: #c99400; --l3: #dc6a1c; --l4a: #cf3434; --l4b: #a8296c; --l5: #6e1f35;
+  --heading: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Public Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
-:root:not([data-theme="light"]) {
---bg: #0f1624; --surface: #172033; --surface-2: #1c2740; --ink: #e8edf7; --ink-soft: #a3afc7; --line: #2a3752;
---brand: #4fc3cc; --brand-tint: #14343a;
---mgr: #f2b84b; --mgr-bg: #3a2b0c; --mgr-line: #a9771c;
---open: #b79cf5; --open-bg: #2a2150; --open-line: #6f55b8; --chg: #8cc1ff; --chg-bg: #17314f; --chg-line: #3d78bd;
---l0: #52c288; --l1: #aac84a; --l2: #e8bb2f; --l3: #f08a47; --l4a: #f26b6b; --l4b: #e66aa8; --l5: #e8798f;
-}
+  :root:not([data-theme="light"]) {
+    --bg: #0f1624; --surface: #172033; --surface-2: #1c2740; --ink: #e8edf7; --ink-soft: #a3afc7; --line: #2a3752;
+    --brand: #4fc3cc; --brand-tint: #14343a;
+    --mgr: #f2b84b; --mgr-bg: #3a2b0c; --mgr-line: #a9771c;
+    --open: #b79cf5; --open-bg: #2a2150; --open-line: #6f55b8; --chg: #8cc1ff; --chg-bg: #17314f; --chg-line: #3d78bd;
+    --l0: #52c288; --l1: #aac84a; --l2: #e8bb2f; --l3: #f08a47; --l4a: #f26b6b; --l4b: #e66aa8; --l5: #e8798f;
+  }
 }
 :root[data-theme="dark"] {
---bg: #0f1624; --surface: #172033; --surface-2: #1c2740; --ink: #e8edf7; --ink-soft: #a3afc7; --line: #2a3752;
---brand: #4fc3cc; --brand-tint: #14343a;
---mgr: #f2b84b; --mgr-bg: #3a2b0c; --mgr-line: #a9771c;
---open: #b79cf5; --open-bg: #2a2150; --open-line: #6f55b8; --chg: #8cc1ff; --chg-bg: #17314f; --chg-line: #3d78bd;
---l0: #52c288; --l1: #aac84a; --l2: #e8bb2f; --l3: #f08a47; --l4a: #f26b6b; --l4b: #e66aa8; --l5: #e8798f;
+  --bg: #0f1624; --surface: #172033; --surface-2: #1c2740; --ink: #e8edf7; --ink-soft: #a3afc7; --line: #2a3752;
+  --brand: #4fc3cc; --brand-tint: #14343a;
+  --mgr: #f2b84b; --mgr-bg: #3a2b0c; --mgr-line: #a9771c;
+  --open: #b79cf5; --open-bg: #2a2150; --open-line: #6f55b8; --chg: #8cc1ff; --chg-bg: #17314f; --chg-line: #3d78bd;
+  --l0: #52c288; --l1: #aac84a; --l2: #e8bb2f; --l3: #f08a47; --l4a: #f26b6b; --l4b: #e66aa8; --l5: #e8798f;
 }
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 72px); scroll-behavior: smooth; height: 100%; }
@@ -53,19 +53,22 @@ body { margin: 0; min-height: 100%; background: var(--bg); color: var(--ink); fo
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 a { color: var(--brand); }
 :focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; border-radius: 4px; }
+
 .topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); border-bottom: 1px solid var(--line); }
 .topbar-in { max-width: 1180px; margin: 0 auto; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .brand { font-family: var(--heading); font-weight: 700; font-size: 18px; }
 .meta { color: var(--ink-soft); font-size: 14px; }
 .switch { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; font-size: 14px; font-weight: 500; user-select: none; }
 .switch input { width: 18px; height: 18px; accent-color: var(--mgr); }
+
 .wrap { max-width: 1180px; margin: 0 auto; padding: 28px 20px 80px; display: grid; grid-template-columns: 1fr; gap: 28px; }
 @media (min-width: 960px) { .wrap { grid-template-columns: 230px minmax(0, 1fr); } }
-nav.toc { align-self: start; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 78px); }
+nav.toc { min-width: 0; align-self: start; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 78px); }
 nav.toc ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 6px; overflow-x: auto; }
 @media (min-width: 960px) { nav.toc ul { flex-direction: column; overflow: visible; } }
 nav.toc a { display: block; padding: 7px 12px; border-radius: 8px; text-decoration: none; color: var(--ink-soft); font-weight: 500; font-size: 15px; white-space: nowrap; }
 nav.toc a:hover { background: var(--surface); color: var(--ink); }
+
 main { min-width: 0; }
 .hero { background: var(--ink); color: var(--bg); border-radius: 18px; padding: 32px 30px; margin-bottom: 22px; }
 :root[data-theme="dark"] .hero { background: var(--surface-2); color: var(--ink); }
@@ -74,10 +77,12 @@ main { min-width: 0; }
 .hero p { margin: 0; max-width: 62ch; opacity: .85; }
 .hero .stamp { margin-top: 18px; display: flex; gap: 8px; flex-wrap: wrap; }
 .hero .stamp span { background: rgba(255,255,255,.12); border-radius: 999px; padding: 4px 12px; font-size: 13px; }
+
 .legend { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin-bottom: 22px; }
 .legend h2 { font-family: var(--heading); font-size: 18px; margin: 0 0 10px; }
 .legend ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
 .legend li { display: flex; gap: 12px; align-items: flex-start; font-size: 15px; }
+
 .tag { display: inline-block; font-size: 12.5px; font-weight: 600; padding: 2px 9px; border-radius: 999px; white-space: nowrap; vertical-align: 1px; }
 .tag.mgr-tag { color: var(--mgr); background: var(--mgr-bg); border: 1px solid var(--mgr-line); }
 .tag.open-tag { color: var(--open); background: var(--open-bg); border: 1px solid var(--open-line); }
@@ -92,10 +97,12 @@ body[data-chg="off"] .changes { display: none; }
 .changes > p { margin: 0 0 10px; color: var(--ink-soft); font-size: 15px; }
 .changes ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; font-size: 15px; }
 .tag.fixed-tag { color: var(--brand); background: var(--brand-tint); border: 1px solid transparent; }
+
 .mgr { background: var(--mgr-bg); border: 1px dashed var(--mgr-line); border-radius: 8px; padding: 1px 7px; }
 .open { background: var(--open-bg); border: 1px dashed var(--open-line); border-radius: 8px; padding: 1px 7px; }
 body[data-hl="off"] .mgr, body[data-hl="off"] .open { background: none; border-color: transparent; padding: 0; }
 body[data-hl="off"] .mgr-tag, body[data-hl="off"] .open-tag, body[data-hl="off"] .board { display: none; }
+
 .board { background: var(--mgr-bg); border: 1px solid var(--mgr-line); border-radius: 14px; padding: 18px 20px; margin-bottom: 26px; }
 .board h2 { font-family: var(--heading); font-size: 20px; margin: 0 0 4px; color: var(--ink); }
 .board > p { margin: 0 0 12px; color: var(--ink-soft); font-size: 15px; }
@@ -103,6 +110,7 @@ body[data-hl="off"] .mgr-tag, body[data-hl="off"] .open-tag, body[data-hl="off"]
 .board li { font-size: 15px; }
 .board .open-item::marker { color: var(--open); }
 .board .sub { margin: 14px 0 6px; font-weight: 600; font-size: 15px; color: var(--open); }
+
 section.card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 26px 26px 22px; margin-bottom: 22px; }
 section.card h2 { font-family: var(--heading); font-size: 26px; margin: 0 0 6px; letter-spacing: -0.01em; line-height: 1.15; }
 section.card .lede { margin: 0 0 18px; color: var(--ink-soft); max-width: 70ch; }
@@ -110,11 +118,13 @@ h3 { font-family: var(--heading); font-size: 18px; margin: 22px 0 8px; }
 p { margin: 0 0 10px; max-width: 75ch; }
 ul.rules, ol.rules { margin: 0 0 12px; padding-left: 22px; max-width: 78ch; }
 ul.rules li, ol.rules li { margin-bottom: 7px; }
+
 .rule-grid { display: grid; gap: 12px; }
 @media (min-width: 700px) { .rule-grid { grid-template-columns: 1fr 1fr; } }
 .rule { background: var(--surface-2); border: 1px solid var(--line); border-left: 5px solid var(--brand); border-radius: 10px; padding: 12px 14px; }
 .rule strong { display: block; margin-bottom: 3px; }
 .rule p { margin: 0; font-size: 15px; }
+
 .ladder { display: grid; gap: 0; margin: 10px 0 14px; max-width: 640px; }
 .ladder .step { display: grid; grid-template-columns: 36px 1fr; gap: 12px; padding-bottom: 14px; position: relative; }
 .ladder .step::before { content: ""; position: absolute; left: 17px; top: 36px; bottom: 0; width: 2px; background: var(--line); }
@@ -125,6 +135,7 @@ ul.rules li, ol.rules li { margin-bottom: 7px; }
 .ladder .t { padding-top: 5px; }
 .ladder .t b { display: block; }
 .ladder .t span { color: var(--ink-soft); font-size: 15px; }
+
 .scroll { overflow-x: auto; margin: 10px 0 14px; border: 1px solid var(--line); border-radius: 12px; }
 table { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 15px; }
 th, td { text-align: left; padding: 11px 14px; vertical-align: top; border-bottom: 1px solid var(--line); }
@@ -137,295 +148,309 @@ tr.lvl .badge { display: inline-block; min-width: 38px; text-align: center; colo
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) tr.lvl .badge { color: #0b1220; } }
 tr.l0 { --c: var(--l0); } tr.l1 { --c: var(--l1); } tr.l2 { --c: var(--l2); } tr.l3 { --c: var(--l3); }
 tr.l4a { --c: var(--l4a); } tr.l4b { --c: var(--l4b); } tr.l5 { --c: var(--l5); }
+
 .scale { display: flex; height: 12px; border-radius: 999px; overflow: hidden; margin: 6px 0 14px; max-width: 640px; }
 .scale i { flex: 1; }
+
 .callout { background: var(--brand-tint); border-radius: 12px; padding: 14px 16px; margin: 12px 0; max-width: 78ch; }
 .callout.warn { background: var(--mgr-bg); border: 1px solid var(--mgr-line); }
 .callout p:last-child { margin-bottom: 0; }
+
 .debrief { display: grid; gap: 12px; margin: 10px 0; }
 @media (min-width: 700px) { .debrief { grid-template-columns: repeat(3, 1fr); } }
 .chat-msg { background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px; padding: 14px; font-size: 15px; }
 .chat-msg b { display: block; margin-bottom: 4px; }
+
 footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top: 30px; }
 </style>
 </head>
 <body data-hl="on" data-chg="on">
+
 <header class="topbar">
-<div class="topbar-in">
-<div><span class="brand">Support Operations Handbook</span> <span class="meta">&nbsp;Demo version</span></div>
-<div style="display:flex;gap:18px;flex-wrap:wrap">
-<label class="switch"><input type="checkbox" id="chgbox" checked style="accent-color:var(--chg-line)"> Highlight latest changes</label>
-<label class="switch"><input type="checkbox" id="hl" checked> Highlight manager decisions</label>
-</div>
-</div>
+  <div class="topbar-in">
+    <div><span class="brand">Support Operations Handbook</span> <span class="meta">&nbsp;Demo version</span></div>
+    <div style="display:flex;gap:18px;flex-wrap:wrap">
+      <label class="switch"><input type="checkbox" id="chgbox" checked style="accent-color:var(--chg-line)"> Highlight latest changes</label>
+      <label class="switch"><input type="checkbox" id="hl" checked> Highlight manager decisions</label>
+    </div>
+  </div>
 </header>
+
 <div class="wrap">
-<nav class="toc" aria-label="Sections">
-<ul>
-<li><a href="#refunds">Refunds and delivery</a></li>
-<li><a href="#replacements">Replacements</a></li>
-<li><a href="#g2a">G2A orders</a></li>
-<li><a href="#abuse">Abusive customers</a></li>
-<li><a href="#debrief">Debrief</a></li>
-<li><a href="#log">Decision log</a></li>
-</ul>
-</nav>
-<main>
-<div class="hero">
-<h1>One place for how we handle orders, refunds and difficult chats.</h1>
-<p>If a rule isn't here, it isn't a rule yet. Ask in the SOP channel, and once it's decided it gets added here.</p>
-<div class="stamp"><span>Version 0.1 (draft)</span><span>Updated 11 Oct 2026</span><span>Owner: to be named</span></div>
+  <nav class="toc" aria-label="Sections">
+    <ul>
+      <li><a href="#refunds">Refunds and delivery</a></li>
+      <li><a href="#replacements">Replacements</a></li>
+      <li><a href="#g2a">G2A orders</a></li>
+      <li><a href="#abuse">Abusive customers</a></li>
+      <li><a href="#log">Decision log</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="hero">
+      <h1>One place for how we handle orders, refunds and difficult chats.</h1>
+      <p>If a rule isn't here, it isn't a rule yet. Ask in the SOP channel, and once it's decided it gets added here.</p>
+      <div class="stamp"><span>Version 0.1 (draft)</span><span>Updated 11 Oct 2026</span><span>Owner: to be named</span></div>
+    </div>
+
+    <!--CHANGES-->
+    <div class="changes" id="changes">
+      <h2>What changed in this revision</h2>
+      <p>11 Oct 2026. The same changes are highlighted in blue on the page.</p>
+      <ul>
+        <li>Abusive customers: cut from six levels to three (tense, personal abuse, severe).</li>
+        <li>Removed the lead, the manager escalation, the threats-to-a-person level and the authorities line. Pressure and extortion is handled in chapter 1.</li>
+        <li>Abuse now means a Live Chat ban only. No Warehouse ban unless the customer is a scammer. They keep their rights, by email.</li>
+        <li>Removed the debrief section. A separate operator well-being section is listed as open.</li>
+        <li>Decision log row for abusive customers updated.</li>
+      </ul>
+    </div>
+    <!--/CHANGES-->
+
+    <div class="legend">
+      <h2>How to read this page</h2>
+      <ul>
+        <li><span class="tag fixed-tag">Rule</span><span>Plain text with no marker is agreed policy. Follow it as written.</span></li>
+        <li><span class="tag mgr-tag">Manager can change</span><span>Decided so far, but the numbers or limits are the manager's call. Highlighted in amber.</span></li>
+        <li><span class="tag chg-tag">Changed</span><span>Blue highlight: changed in the latest revision. The box at the top lists what changed.</span></li>
+        <li><span class="tag open-tag">Open decision</span><span>Nobody has decided yet. Highlighted in violet. Don't improvise: escalate and log it.</span></li>
+      </ul>
+    </div>
+
+    <div class="board" id="board">
+      <h2>For the manager: what you can adjust</h2>
+      <p>Everything amber or violet in this document, in one list.</p>
+      <ol>
+        <li><b>Refund cutoff</b> for failed replacements, currently 3 months.</li>
+        <li><b>Replacement promise</b>, currently 24 to 48 hours.</li>
+        <li><b>Different game offer</b>: the 5-day wait and the 10% price tolerance. Requests for a new release go to you.</li>
+        <li><b>Dead on arrival window</b>, currently 2 hours after delivery.</li>
+        <li><b>"Angry customer" refund exception</b>: which triggers count.</li>
+        <li><b>What G2A assistance covers</b>, currently the 2FA code only.</li>
+        <li><b>Warnings before banning an abusive customer</b>, currently a boundary message and one final warning.</li>
+      </ol>
+      <p class="sub">Still open, needs a decision</p>
+      <ol class="open-list" start="8">
+        <li class="open-item">Set up the Blacklist group in PrestaShop, so a block actually stops a customer from buying.</li>
+        <li class="open-item"><mark class="chg" id="chg-1">Tag every closed abusive chat in Live Chat by level? To be looked into.</mark></li>
+        <li class="open-item"><mark class="chg" id="chg-2">Operator well-being section: burnout, and passing a chat to another operator instead of arguing with the customer.</mark></li>
+      </ol>
+    </div>
+
+    <section class="card" id="refunds">
+      <h2>Refunds and delivery</h2>
+      <p class="lede">Applies to orders placed on our own website. Our TOS does not offer refunds, so every refund is an exception we choose to make. The operator on shift decides.</p>
+
+      <div class="callout">
+        <p><b>Zero tolerance for scammers.</b> Whenever you verify an account, also decide whether the customer is trying to get a free game. If so, we never issue a refund, whatever the customer says or threatens.</p>
+        <p><b>Always ask for the Order ID.</b> No refund and no replacement without one.</p>
+      </div>
+
+      <h3>Signs of a scammer</h3>
+      <ul class="rules">
+        <li>On our own site, the customer says the account doesn't work and asks for a refund, but in fact they changed the email themselves.</li>
+        <li>The customer implies that someone else bought it for them, but cannot give the order ID. This is an instant suspect.</li>
+      </ul>
+      <p>These are the patterns we know so far. When you identify a scammer, there is no refund and no replacement. Ban them in Warehouse and add them to the matching group, with the reason, and block them in PrestaShop (the Blacklist group)*.</p>
+      <p style="font-size:14px;color:var(--ink-soft)">* The PrestaShop block is the Blacklist group, which is not set up yet. Until it is, the Warehouse ban and group is what works: it tells every operator about the customer.</p>
+
+      <h3>The account was delivered</h3>
+      <div class="ladder">
+        <div class="step"><div class="n">1</div><div class="t"><b>Explain, don't refund</b><span>Tell the customer that under our TOS we can't refund. Explain that it works the same as buying a key, and that the accounts are new. Most customers understand and agree.</span></div></div>
+        <div class="step"><div class="n">2</div><div class="t"><b>If they keep insisting, verify the account</b><span>Check whether it was used, whether we can recover it, and whether the customer is trying to get a free game.</span></div></div>
+        <div class="step"><div class="n">3</div><div class="t"><b>Not used and recoverable: make an exception</b><span>Tell the customer we are making an exception, then issue the refund. You decide this yourself.</span></div></div>
+        <div class="step"><div class="n">4</div><div class="t"><b>Used, or not recoverable: no refund</b><span>The answer stays no, unless the customer meets one of the angry customer triggers below.</span></div></div>
+      </div>
+
+      <h3>The angry customer exception</h3>
+      <p>If the account was used and we would normally say no, we still refund when the customer puts us at risk of a dispute. The operator decides, then follows the blocking steps below. This never applies to a customer you have identified as a scammer. <span class="tag mgr-tag">Manager can change</span></p>
+      <p>Refund if the customer does any of these:</p>
+      <ul class="rules">
+        <li>Says they will open a dispute or a chargeback with their bank or payment provider.</li>
+        <li>Threatens to report us to G2A, the payment provider or a consumer authority, or threatens legal action.</li>
+        <li>Threatens a negative review or a public post about us.</li>
+      </ul>
+      <p>This list is a guide, not a checklist. Customers won't always say it in these words, so use your judgment on what is a real threat and stay flexible with the customer.</p>
+      <p>Insults, swearing, caps lock, impatience or simply insisting are <b>not</b> triggers on their own. Insults follow the abusive customers chapter, and the answer on the refund stays the same.</p>
+
+      <h3>The account was not delivered</h3>
+      <div class="rule-grid">
+        <div class="rule">
+          <strong>Customer is aggressive</strong>
+          <p>Refund immediately, no questions asked.</p>
+        </div>
+        <div class="rule">
+          <strong>Customer is calm</strong>
+          <p>Explain that the product was advertised as a backorder and delivery can take up to 24 hours. They may choose to wait. If they still want a refund, we refund them.</p>
+        </div>
+      </div>
+
+      <h3>Dead on arrival or wrong region</h3>
+      <div class="rule">
+        <strong>Only if reported within <span class="mgr">2 hours</span> of delivery <span class="tag mgr-tag">Manager can change</span></strong>
+        <p>Check the account very carefully in the internal audit panel, then decide: is it really dead or in the wrong region, or is the customer trying to scam us? If it is confirmed dead, replace it immediately. Refund only as a last resort (see the replacement ladder). If you decide it is a scam attempt, there is no replacement and we never refund. After 2 hours it is no longer dead on arrival: the order is treated like any other delivered account, and the warranty rules apply (see Replacements).</p>
+      </div>
+
+      <h3>When we refund to avoid a dispute</h3>
+      <p>If the customer used the account and we still refund to avoid a dispute, ban them in Warehouse and add them to the matching group, with the reason, and block them in PrestaShop (the Blacklist group)*. The operator decides on the spot, and the manager does not need to be told.</p>
+      <p style="font-size:14px;color:var(--ink-soft)">* The PrestaShop block is the Blacklist group, which is not set up yet. Until it is, the Warehouse ban and group is what works: it tells every operator about the customer.</p>
+
+      <h3>Blocking, banning and groups</h3>
+      <p>These are three separate actions in three tools. None of them obliges you to do the others.</p>
+      <div class="rule-grid">
+        <div class="rule"><strong>Live Chat: ban</strong><p>Stops an abusive customer from chatting with us (see Abusive customers). A PrestaShop block is not mandatory after it.</p></div>
+        <div class="rule"><strong>Warehouse: ban and group</strong><p>Kept for our own statistics, and it is also how every operator learns about the customer. Always add the customer to the matching group, with the reason, so the next agent who meets them knows why. The groups already exist in Warehouse, and you will know which one to pick. A PrestaShop block is not mandatory after it.</p></div>
+        <div class="rule"><strong>PrestaShop: block</strong><p>The block is the Blacklist group, which is meant to stop the customer from buying from us. Write the reason, date and operator in the customer note. The Blacklist group is not set up yet, so for now the Warehouse ban and group is what works.</p></div>
+      </div>
+      <p style="margin-top:12px">The manager reviews the banned customers list once a week.</p>
+
+      <h3>Resellers</h3>
+      <p>Resellers are not allowed. If we catch one:</p>
+      <ol class="rules">
+        <li>Ask them not to purchase from us anymore.</li>
+        <li>Force refund their order.</li>
+        <li>Tell them that they will be blacklisted and that all their upcoming orders will be automatically declined, to discourage them from buying again.</li>
+        <li>Ban them in Warehouse and add them to the reseller group.</li>
+        <li>Block them in PrestaShop (the Blacklist group)*, which is what will decline their upcoming orders automatically.</li>
+      </ol>
+      <p><b>How to recognize a reseller:</b></p>
+      <ul class="rules">
+        <li>They ask us directly for an offer, which most resellers do.</li>
+        <li>They buy several copies of the same game.</li>
+        <li>They want to use the accounts in their game center, which is also not allowed.</li>
+      </ul>
+      <p style="font-size:14px;color:var(--ink-soft)">* The PrestaShop block is the Blacklist group, which is not set up yet. Until it is, the Warehouse ban and group is what works: it tells every operator about the customer.</p>
+
+      <h3>Customers who threaten a dispute, a chargeback or a bad review</h3>
+      <p>Disputes and chargebacks are handled outside Live Chat, by a dedicated operator. In the chat, your job is to stay polite and leave a clean record, because the dedicated operator takes the proof from the conversation. These cases will happen, and some will end in a dispute whatever you do.</p>
+      <div class="rule-grid">
+        <div class="rule"><strong>Stay calm and polite</strong><p>Don't argue and don't answer pressure with pressure. The chat history is evidence and will be read.</p></div>
+        <div class="rule"><strong>Promise and admit nothing</strong><p>Don't promise any result about the dispute and don't admit fault. Stick to the rules in this chapter.</p></div>
+        <div class="rule"><strong>Check the angry customer exception</strong><p>If the customer meets a trigger, refund and block as described above.</p></div>
+      </div>
+      <div class="rule" style="margin-top:12px">
+        <strong>Credentials revealed, viewed or accessed</strong>
+        <p>This is our main defense in a dispute. The order is not refundable by default, including "I thought it was a key, not an account" claims, because the disclosures on the site and the marketplace state clearly that it is an account.</p>
+      </div>
+      <p style="margin-top:12px">You do not need to report or hand off disputes. The dedicated operator checks them directly on the payment processor's site.</p>
+    </section>
+
+    <section class="card" id="replacements">
+      <h2>Replacements</h2>
+      <p class="lede">Our products have a lifetime warranty, and the warranty means a replacement. A refund is the last resort.</p>
+
+      <h3>Verify before you replace</h3>
+      <p>Within 3 months of delivery the account should still work exactly as it was sent, and in practice almost all of them do. After 3 months a replacement may really be needed. In both cases the operator checks the account first and decides which of these it is:</p>
+      <ul class="rules">
+        <li><b>Still working:</b> no replacement.</li>
+        <li><b>Working, but the customer changed the email, or otherwise manipulated the account:</b> the warranty is void, because we can no longer verify that it is the account we sold. No replacement, and no refund. If you find this clearly, the answer is final. Changing the password alone does <b>not</b> void the warranty. On G2A orders an email change is judged case by case (see G2A orders).</li>
+        <li><b>Not working from our side:</b> replacement.</li>
+      </ul>
+      <div class="callout">
+        <p><b>Zero tolerance for scammers.</b> If the customer is trying to get a free game, there is no replacement and we never refund. Then ban them in Warehouse, add them to the matching group and block them in PrestaShop, as described in Refunds and delivery.</p>
+      </div>
+
+      <h3>Opening a ticket</h3>
+      <ol class="rules">
+        <li>Ask for the <b>Order ID</b>. A replacement is never issued without one.</li>
+        <li>Create the ticket in <b>Warehouse</b>. This is mandatory. You can also create it in the Live Chat app, but never only there.</li>
+        <li>Use the <b>Purchase verification tool</b> to start the replacement, or to register a task when the game is out of stock.</li>
+        <li>Warehouse notifies us when the game comes into stock, and we deliver.</li>
+      </ol>
+
+      <h3>When a replacement can't be delivered</h3>
+      <p>We promise a replacement within <span class="mgr">24 to 48 hours</span> <span class="tag mgr-tag">Manager can change</span>, counted from the moment the ticket is created in Warehouse. If we can't make it, work down this ladder:</p>
+      <div class="ladder">
+        <div class="step"><div class="n">1</div><div class="t"><b>Same game</b><span>Keep trying to source it.</span></div></div>
+        <div class="step"><div class="n">2</div><div class="t"><b>Keep the customer informed</b><span>Talk to them when they come back. Most customers wait.</span></div></div>
+        <div class="step"><div class="n">3</div><div class="t"><b>Offer a different game</b><span>After <span class="mgr">5 days</span> of waiting, the customer can pick another game priced at what they paid, <span class="mgr">within 10% either way</span>. We do not replace an old game with a brand new release, even if the customer paid the same amount. If the customer asks for a new release, the operator asks the manager what to do. <span class="tag mgr-tag">Manager can change</span> The operator decides.</span></div></div>
+        <div class="step"><div class="n">4</div><div class="t"><b>Refund, only if the order is under <span class="mgr">3 months</span> old</b><span><span class="tag mgr-tag">Manager can change</span> The operator decides. After 3 months a refund is practically not possible: the customer keeps waiting for the same game, or takes a different one.</span></div></div>
+      </div>
+      <p>There is no fixed limit on replacements for a real customer. In practice a customer may get a replacement after 3 months, and another one about 3 months after that. This is not a hard rule. The operator checks the account every time the customer contacts us, and requests that come much more often than that are a sign to look at the account more carefully.</p>
+    </section>
+
+    <section class="card" id="g2a">
+      <h2>G2A orders</h2>
+      <p class="lede">G2A orders keep the warranty even when the buyer changed the credentials.</p>
+
+      <ul class="rules">
+        <li>We don't mention the warranty first and we don't rush to replace. <b>Start with assistance.</b></li>
+        <li><span class="mgr">Assistance means giving the customer the 2FA code needed to log in to the account. It does not include a replacement.</span> <span class="tag mgr-tag">Manager can change</span></li>
+        <li>G2A's own message asks buyers to change the credentials. That voids the warranty we give on our site because we can no longer verify the account, but our manager decided to still offer assistance and warranty on G2A orders.</li>
+        <li>Replacements on G2A orders are done by the operator, the same as on our own site, including when the credentials were changed. Before replacing, the operator verifies the account (see "Verify before you replace" in Replacements).</li>
+        <li>If the customer changed the email on a G2A order, the warranty is not automatically void. The operator judges it case by case, depending on the customer, and the password alone never counts.</li>
+        <li>G2A has no response deadline, unlike our website.</li>
+      </ul>
+
+      <div class="callout">
+        <p><b>G2A tickets: two places, always.</b> Verify and complete the ticket in the <b>G2A Dashboard</b> as well, not only from the email notification.</p>
+      </div>
+    </section>
+
+    <section class="card" id="abuse">
+      <h2>Abusive customers</h2>
+      <p class="lede"><mark class="chg" id="chg-3">Frustration is not abuse. Find the level, then do what the last column says. There are three levels.</mark></p>
+
+      <div class="scale" aria-hidden="true">
+        <i style="background:var(--l1)"></i><i style="background:var(--l3)"></i><i style="background:var(--l4a)"></i>
+      </div>
+
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Level</th><th>Type</th><th>Examples</th><th>What you do</th></tr></thead>
+          <tbody>
+            <tr class="lvl l1"><td><span class="badge">1</span></td><td><mark class="chg" id="chg-4">Tense</mark></td><td><mark class="chg" id="chg-5">Frustration, rude tone, caps lock, sarcasm, swearing about the shop or the situation: "I've waited two days", "this is unacceptable"</mark></td><td><mark class="chg" id="chg-6">Not abuse. Stay polite, apologize for the wait, give a clear timeline and solve the problem. No warning needed.</mark></td></tr>
+            <tr class="lvl l3"><td><span class="badge">2</span></td><td><mark class="chg" id="chg-7">Personal abuse</mark></td><td><mark class="chg" id="chg-8">Insults aimed at you, mocking, spamming, continuing after a reminder</mark></td><td><mark class="chg" id="chg-9">Send a boundary message, then</mark> <span class="mgr"><mark class="chg" id="chg-10">one final warning</mark></span><mark class="chg" id="chg-11">. If it continues, ban the customer in Live Chat. They can continue by email.</mark> <span class="tag mgr-tag">Manager can change</span></td></tr>
+            <tr class="lvl l4a"><td><span class="badge">3</span></td><td><mark class="chg" id="chg-12">Severe</mark></td><td><mark class="chg" id="chg-13">Sexual comments, slurs, discriminatory language, targeting you by name</mark></td><td><mark class="chg" id="chg-14">Skip the ladder. Ban in Live Chat right away and save the chat as evidence.</mark></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><mark class="chg" id="chg-15">Repeated abuse across channels (chat, email, reviews) or aimed at one operator by name is treated as level 3.</mark></p>
+
+      <h3>Rules at every level</h3>
+      <div class="rule-grid">
+        <div class="rule"><strong>Their order rights don't change</strong><p>Warranty and refund eligibility never depend on behavior. Only the channel changes, from chat to email.</p></div>
+        <div class="rule"><strong><mark class="chg" id="chg-16">Abuse is not a reason to refund</mark></strong><p><mark class="chg" id="chg-17">Insults do not count as an angry-customer trigger. Refunds follow the rules in chapter 1.</mark></p></div>
+        <div class="rule"><strong><mark class="chg" id="chg-18">Live Chat ban only</mark></strong><p><mark class="chg" id="chg-19">No Warehouse ban and no group for abuse. Those are only for scammers and resellers (chapter 1).</mark></p></div>
+      </div>
+
+      <div class="callout warn">
+        <p><b>Closing message to use:</b> we can continue by email, and the customer's order rights stay the same. A ready-made macro for the boundary message and the final warning will be added here.</p>
+      </div>
+    </section>
+
+    <section class="card" id="log">
+      <h2>Decision log</h2>
+      <p class="lede">Anything decided in Discord that changes how we work gets copied here within a day or two.</p>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Date</th><th>Situation</th><th>Decision</th><th>Decided by</th></tr></thead>
+          <tbody>
+            <tr><td>1 Oct 2026</td><td>Failed replacement, refund limit</td><td>Refund only within 3 months. Warranty means replacement.</td><td><span class="mgr">To be confirmed</span></td></tr>
+            <tr><td>1 Oct 2026</td><td>G2A order, credentials changed</td><td>Offer assistance (2FA code), not an automatic replacement.</td><td>Manager</td></tr>
+            <tr><td>1 Oct 2026</td><td>Blocked and banned customers</td><td>Ban in Warehouse (for our statistics and so every operator knows about the customer) and always add to a group with the reason. Block in PrestaShop (the Blacklist group) with a note in the customer profile once the group is set up. A block after a ban is not mandatory.</td><td><span class="mgr">To be confirmed</span></td></tr>
+            <tr><td>1 Oct 2026</td><td>Abusive customers</td><td><mark class="chg" id="chg-20">Three levels. Boundary message, final warning, then ban in Live Chat. No Warehouse ban unless a scammer. Order rights stay, by email only.</mark></td><td><span class="mgr">To be confirmed</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>Demo layout. Content is a working draft and not final policy.</footer>
+  </main>
 </div>
-<!--CHANGES-->
-<div class="changes" id="changes">
-<h2>What changed in this revision</h2>
-<p>11 Oct 2026. The same changes are highlighted in blue on the page.</p>
-<ul>
-<li><a href="#chg-1">Replacements, different game offer:</a> new rule. We do not replace an old game with a brand new release, even at the same price. The operator asks the manager. This replaces the "being decided" note.</li>
-<li><a href="#chg-2">Manager list:</a> added that requests for a new release go to the manager.</li>
-<li>Open list: removed the new-release question, because it is now decided.</li>
-</ul>
-</div>
-<!--/CHANGES-->
-<div class="legend">
-<h2>How to read this page</h2>
-<ul>
-<li><span class="tag fixed-tag">Rule</span><span>Plain text with no marker is agreed policy. Follow it as written.</span></li>
-<li><span class="tag mgr-tag">Manager can change</span><span>Decided so far, but the numbers or limits are the manager's call. Highlighted in amber.</span></li>
-<li><span class="tag chg-tag">Changed</span><span>Blue highlight: changed in the latest revision. The box at the top lists what changed.</span></li>
-<li><span class="tag open-tag">Open decision</span><span>Nobody has decided yet. Highlighted in violet. Don't improvise: escalate and log it.</span></li>
-</ul>
-</div>
-<div class="board" id="board">
-<h2>For the manager: what you can adjust</h2>
-<p>Everything amber or violet in this document, in one list.</p>
-<ol>
-<li><b>Refund cutoff</b> for failed replacements, currently 3 months.</li>
-<li><b>Replacement promise</b>, currently 24 to 48 hours.</li>
-<li><b>Different game offer</b>: the 5-day wait and the 10% price tolerance. <mark class="chg" id="chg-2">Requests for a new release go to you.</mark></li>
-<li><b>Dead on arrival window</b>, currently 2 hours after delivery.</li>
-<li><b>"Angry customer" refund exception</b>: which triggers count.</li>
-<li><b>What G2A assistance covers</b>, currently the 2FA code only.</li>
-<li><b>Warnings before closing an abusive chat</b>, currently a boundary message and one final warning.</li>
-<li><b>Which abuse levels go to the manager</b> instead of a lead, currently levels 4b and 5.</li>
-</ol>
-<p class="sub">Still open, needs a decision</p>
-<ol class="open-list" start="9">
-<li class="open-item">Set up the Blacklist group in PrestaShop, so a block actually stops a customer from buying.</li>
-</ol>
-</div>
-<section class="card" id="refunds">
-<h2>Refunds and delivery</h2>
-<p class="lede">Applies to orders placed on our own website. Our TOS does not offer refunds, so every refund is an exception we choose to make. The operator on shift decides.</p>
-<div class="callout">
-<p><b>Zero tolerance for scammers.</b> Whenever you verify an account, also decide whether the customer is trying to get a free game. If so, we never issue a refund, whatever the customer says or threatens.</p>
-<p><b>Always ask for the Order ID.</b> No refund and no replacement without one.</p>
-</div>
-<h3>Signs of a scammer</h3>
-<ul class="rules">
-<li>On our own site, the customer says the account doesn't work and asks for a refund, but in fact they changed the email themselves.</li>
-<li>The customer implies that someone else bought it for them, but cannot give the order ID. This is an instant suspect.</li>
-</ul>
-<p>These are the patterns we know so far. When you identify a scammer, there is no refund and no replacement. Ban them in Warehouse and add them to the matching group, with the reason, and block them in PrestaShop (the Blacklist group)*.</p>
-<p style="font-size:14px;color:var(--ink-soft)">* The PrestaShop block is the Blacklist group, which is not set up yet. Until it is, the Warehouse ban and group is what works: it tells every operator about the customer.</p>
-<h3>The account was delivered</h3>
-<div class="ladder">
-<div class="step"><div class="n">1</div><div class="t"><b>Explain, don't refund</b><span>Tell the customer that under our TOS we can't refund. Explain that it works the same as buying a key, and that the accounts are new. Most customers understand and agree.</span></div></div>
-<div class="step"><div class="n">2</div><div class="t"><b>If they keep insisting, verify the account</b><span>Check whether it was used, whether we can recover it, and whether the customer is trying to get a free game.</span></div></div>
-<div class="step"><div class="n">3</div><div class="t"><b>Not used and recoverable: make an exception</b><span>Tell the customer we are making an exception, then issue the refund. You decide this yourself.</span></div></div>
-<div class="step"><div class="n">4</div><div class="t"><b>Used, or not recoverable: no refund</b><span>The answer stays no, unless the customer meets one of the angry customer triggers below.</span></div></div>
-</div>
-<h3>The angry customer exception</h3>
-<p>If the account was used and we would normally say no, we still refund when the customer puts us at risk of a dispute. The operator decides, then follows the blocking steps below. This never applies to a customer you have identified as a scammer. <span class="tag mgr-tag">Manager can change</span></p>
-<p>Refund if the customer does any of these:</p>
-<ul class="rules">
-<li>Says they will open a dispute or a chargeback with their bank or payment provider.</li>
-<li>Threatens to report us to G2A, the payment provider or a consumer authority, or threatens legal action.</li>
-<li>Threatens a negative review or a public post about us.</li>
-</ul>
-<p>This list is a guide, not a checklist. Customers won't always say it in these words, so use your judgment on what is a real threat and stay flexible with the customer.</p>
-<p>Insults, swearing, caps lock, impatience or simply insisting are <b>not</b> triggers on their own. Insults follow the abusive customers chapter, and the answer on the refund stays the same.</p>
-<h3>The account was not delivered</h3>
-<div class="rule-grid">
-<div class="rule">
-<strong>Customer is aggressive</strong>
-<p>Refund immediately, no questions asked.</p>
-</div>
-<div class="rule">
-<strong>Customer is calm</strong>
-<p>Explain that the product was advertised as a backorder and delivery can take up to 24 hours. They may choose to wait. If they still want a refund, we refund them.</p>
-</div>
-</div>
-<h3>Dead on arrival or wrong region</h3>
-<div class="rule">
-<strong>Only if reported within <span class="mgr">2 hours</span> of delivery <span class="tag mgr-tag">Manager can change</span></strong>
-<p>Check the account very carefully in the internal audit panel, then decide: is it really dead or in the wrong region, or is the customer trying to scam us? If it is confirmed dead, replace it immediately. Refund only as a last resort (see the replacement ladder). If you decide it is a scam attempt, there is no replacement and we never refund. After 2 hours it is no longer dead on arrival: the order is treated like any other delivered account, and the warranty rules apply (see Replacements).</p>
-</div>
-<h3>When we refund to avoid a dispute</h3>
-<p>If the customer used the account and we still refund to avoid a dispute, ban them in Warehouse and add them to the matching group, with the reason, and block them in PrestaShop (the Blacklist group)*. The operator decides on the spot, and the manager does not need to be told.</p>
-<p style="font-size:14px;color:var(--ink-soft)">* The PrestaShop block is the Blacklist group, which is not set up yet. Until it is, the Warehouse ban and group is what works: it tells every operator about the customer.</p>
-<h3>Blocking, banning and groups</h3>
-<p>These are three separate actions in three tools. None of them obliges you to do the others.</p>
-<div class="rule-grid">
-<div class="rule"><strong>Live Chat: ban</strong><p>Stops an abusive customer from chatting with us (see Abusive customers). A PrestaShop block is not mandatory after it.</p></div>
-<div class="rule"><strong>Warehouse: ban and group</strong><p>Kept for our own statistics, and it is also how every operator learns about the customer. Always add the customer to the matching group, with the reason, so the next agent who meets them knows why. The groups already exist in Warehouse, and you will know which one to pick. A PrestaShop block is not mandatory after it.</p></div>
-<div class="rule"><strong>PrestaShop: block</strong><p>The block is the Blacklist group, which is meant to stop the customer from buying from us. Write the reason, date and operator in the customer note. The Blacklist group is not set up yet, so for now the Warehouse ban and group is what works.</p></div>
-</div>
-<p style="margin-top:12px">The manager reviews the banned customers list once a week.</p>
-<h3>Resellers</h3>
-<p>Resellers are not allowed. If we catch one:</p>
-<ol class="rules">
-<li>Ask them not to purchase from us anymore.</li>
-<li>Force refund their order.</li>
-<li>Tell them that they will be blacklisted and that all their upcoming orders will be automatically declined, to discourage them from buying again.</li>
-<li>Ban them in Warehouse and add them to the reseller group.</li>
-<li>Block them in PrestaShop (the Blacklist group)*, which is what will decline their upcoming orders automatically.</li>
-</ol>
-<p><b>How to recognize a reseller:</b></p>
-<ul class="rules">
-<li>They ask us directly for an offer, which most resellers do.</li>
-<li>They buy several copies of the same game.</li>
-<li>They want to use the accounts in their game center, which is also not allowed.</li>
-</ul>
-<p style="font-size:14px;color:var(--ink-soft)">* The PrestaShop block is the Blacklist group, which is not set up yet. Until it is, the Warehouse ban and group is what works: it tells every operator about the customer.</p>
-<h3>Customers who threaten a dispute, a chargeback or a bad review</h3>
-<p>Disputes and chargebacks are handled outside Live Chat, by a dedicated operator. In the chat, your job is to stay polite and leave a clean record, because the dedicated operator takes the proof from the conversation. These cases will happen, and some will end in a dispute whatever you do.</p>
-<div class="rule-grid">
-<div class="rule"><strong>Stay calm and polite</strong><p>Don't argue and don't answer pressure with pressure. The chat history is evidence and will be read.</p></div>
-<div class="rule"><strong>Promise and admit nothing</strong><p>Don't promise any result about the dispute and don't admit fault. Stick to the rules in this chapter.</p></div>
-<div class="rule"><strong>Check the angry customer exception</strong><p>If the customer meets a trigger, refund and block as described above.</p></div>
-</div>
-<div class="rule" style="margin-top:12px">
-<strong>Credentials revealed, viewed or accessed</strong>
-<p>This is our main defense in a dispute. The order is not refundable by default, including "I thought it was a key, not an account" claims, because the disclosures on the site and the marketplace state clearly that it is an account.</p>
-</div>
-<p style="margin-top:12px">You do not need to report or hand off disputes. The dedicated operator checks them directly on the payment processor's site.</p>
-</section>
-<section class="card" id="replacements">
-<h2>Replacements</h2>
-<p class="lede">Our products have a lifetime warranty, and the warranty means a replacement. A refund is the last resort.</p>
-<h3>Verify before you replace</h3>
-<p>Within 3 months of delivery the account should still work exactly as it was sent, and in practice almost all of them do. After 3 months a replacement may really be needed. In both cases the operator checks the account first and decides which of these it is:</p>
-<ul class="rules">
-<li><b>Still working:</b> no replacement.</li>
-<li><b>Working, but the customer changed the email, or otherwise manipulated the account:</b> the warranty is void, because we can no longer verify that it is the account we sold. No replacement, and no refund. If you find this clearly, the answer is final. Changing the password alone does <b>not</b> void the warranty. On G2A orders an email change is judged case by case (see G2A orders).</li>
-<li><b>Not working from our side:</b> replacement.</li>
-</ul>
-<div class="callout">
-<p><b>Zero tolerance for scammers.</b> If the customer is trying to get a free game, there is no replacement and we never refund. Then ban them in Warehouse, add them to the matching group and block them in PrestaShop, as described in Refunds and delivery.</p>
-</div>
-<h3>Opening a ticket</h3>
-<ol class="rules">
-<li>Ask for the <b>Order ID</b>. A replacement is never issued without one.</li>
-<li>Create the ticket in <b>Warehouse</b>. This is mandatory. You can also create it in the Live Chat app, but never only there.</li>
-<li>Use the <b>Purchase verification tool</b> to start the replacement, or to register a task when the game is out of stock.</li>
-<li>Warehouse notifies us when the game comes into stock, and we deliver.</li>
-</ol>
-<h3>When a replacement can't be delivered</h3>
-<p>We promise a replacement within <span class="mgr">24 to 48 hours</span> <span class="tag mgr-tag">Manager can change</span>, counted from the moment the ticket is created in Warehouse. If we can't make it, work down this ladder:</p>
-<div class="ladder">
-<div class="step"><div class="n">1</div><div class="t"><b>Same game</b><span>Keep trying to source it.</span></div></div>
-<div class="step"><div class="n">2</div><div class="t"><b>Keep the customer informed</b><span>Talk to them when they come back. Most customers wait.</span></div></div>
-<div class="step"><div class="n">3</div><div class="t"><b>Offer a different game</b><span>After <span class="mgr">5 days</span> of waiting, the customer can pick another game priced at what they paid, <span class="mgr">within 10% either way</span>. <mark class="chg" id="chg-1">We do not replace an old game with a brand new release, even if the customer paid the same amount. If the customer asks for a new release, the operator asks the manager what to do.</mark> <span class="tag mgr-tag">Manager can change</span> The operator decides.</span></div></div>
-<div class="step"><div class="n">4</div><div class="t"><b>Refund, only if the order is under <span class="mgr">3 months</span> old</b><span><span class="tag mgr-tag">Manager can change</span> The operator decides. After 3 months a refund is practically not possible: the customer keeps waiting for the same game, or takes a different one.</span></div></div>
-</div>
-<p>There is no fixed limit on replacements for a real customer. In practice a customer may get a replacement after 3 months, and another one about 3 months after that. This is not a hard rule. The operator checks the account every time the customer contacts us, and requests that come much more often than that are a sign to look at the account more carefully.</p>
-</section>
-<section class="card" id="g2a">
-<h2>G2A orders</h2>
-<p class="lede">G2A orders keep the warranty even when the buyer changed the credentials.</p>
-<ul class="rules">
-<li>We don't mention the warranty first and we don't rush to replace. <b>Start with assistance.</b></li>
-<li><span class="mgr">Assistance means giving the customer the 2FA code needed to log in to the account. It does not include a replacement.</span> <span class="tag mgr-tag">Manager can change</span></li>
-<li>G2A's own message asks buyers to change the credentials. That voids the warranty we give on our site because we can no longer verify the account, but our manager decided to still offer assistance and warranty on G2A orders.</li>
-<li>Replacements on G2A orders are done by the operator, the same as on our own site, including when the credentials were changed. Before replacing, the operator verifies the account (see "Verify before you replace" in Replacements).</li>
-<li>If the customer changed the email on a G2A order, the warranty is not automatically void. The operator judges it case by case, depending on the customer, and the password alone never counts.</li>
-<li>G2A has no response deadline, unlike our website.</li>
-</ul>
-<div class="callout">
-<p><b>G2A tickets: two places, always.</b> Verify and complete the ticket in the <b>G2A Dashboard</b> as well, not only from the email notification.</p>
-</div>
-</section>
-<section class="card" id="abuse">
-<h2>Abusive customers</h2>
-<p class="lede">Frustration is not abuse. Find the level, then do what the last column says. Levels go from calm to dangerous.</p>
-<div class="scale" aria-hidden="true">
-<i style="background:var(--l0)"></i><i style="background:var(--l1)"></i><i style="background:var(--l2)"></i><i style="background:var(--l3)"></i><i style="background:var(--l4a)"></i><i style="background:var(--l4b)"></i><i style="background:var(--l5)"></i>
-</div>
-<div class="scroll">
-<table>
-<thead><tr><th>Level</th><th>Type</th><th>Examples</th><th>What you do</th></tr></thead>
-<tbody>
-<tr class="lvl l0"><td><span class="badge">0</span></td><td>Frustration</td><td>"I've waited two days", "this is unacceptable"</td><td>Not abuse. Stay polite, apologize for the wait, solve the problem.</td></tr>
-<tr class="lvl l1"><td><span class="badge">1</span></td><td>Rude tone</td><td>Caps lock, sarcasm, repeated demands</td><td>Stay professional and give a clear timeline. No warning needed.</td></tr>
-<tr class="lvl l2"><td><span class="badge">2</span></td><td>Hostile language, not aimed at a person</td><td>Swearing about the shop or the situation</td><td>One soft reminder, then keep helping.</td></tr>
-<tr class="lvl l3"><td><span class="badge">3</span></td><td>Personal abuse</td><td>Insults aimed at you, mocking, spamming, continuing after a reminder</td><td>Boundary message, then <span class="mgr">one final warning</span>. If it continues, close the chat, redirect to email, log it and hand over to a lead. <span class="tag mgr-tag">Manager can change</span></td></tr>
-<tr class="lvl l4a"><td><span class="badge">4a</span></td><td>Harassment</td><td>Sexual comments, slurs, discriminatory language, targeting you by name</td><td>Skip the ladder. Close the chat immediately and hand over to a lead.</td></tr>
-<tr class="lvl l4b"><td><span class="badge">4b</span></td><td>Pressure and extortion</td><td>"Refund me or I'll file a chargeback", threat of a 1-star review, threat to report us to G2A or the provider, legal threats</td><td>You decide nothing. Stay calm, collect evidence, escalate under the dispute protocol. <span class="mgr">Goes to the manager.</span> <span class="tag mgr-tag">Manager can change</span></td></tr>
-<tr class="lvl l5"><td><span class="badge">5</span></td><td>Threats to a person</td><td>Violence, threats against family, sharing your personal information, stalking</td><td>Close immediately, save the evidence, escalate to the manager. The customer is blocked. Serious threats may need to be reported to the authorities.</td></tr>
-</tbody>
-</table>
-</div>
-<h3>Raise the level by one if</h3>
-<ul class="rules">
-<li>It continues after a warning.</li>
-<li>It's repeated across channels (chat, email, social media, reviews).</li>
-<li>It targets a specific operator by name.</li>
-<li>It's public, such as a review or a post naming the team.</li>
-</ul>
-<h3>Rules at every level</h3>
-<div class="rule-grid">
-<div class="rule"><strong>Their order rights don't change</strong><p>Warranty and refund eligibility never depend on behavior. Only the channel changes, from chat to email.</p></div>
-<div class="rule"><strong>No refund to calm someone down</strong><p>An operator never grants it alone. The lead approves, and the customer is then blocked.</p></div>
-<div class="rule"><strong>Tag every closed chat</strong><p>Add the level in Live Chat, for example <code>abuse-L3</code>, so we can review them monthly.</p></div>
-<div class="rule"><strong>Hand off at any level, no penalty</strong><p>Performance and politeness drop after a few hard chats. Handing off protects the customer and you.</p></div>
-</div>
-<div class="callout warn">
-<p><b>Closing message to use:</b> we can continue by email, and the customer's order rights stay the same. A ready-made macro for the boundary message and the final warning will be added here.</p>
-</div>
-</section>
-<section class="card" id="debrief">
-<h2>Debrief after a hard chat</h2>
-<p class="lede">Three lines in the debrief thread on Discord. It gets the chat out of your head and tells us what to fix. It is never used to judge you.</p>
-<p><b>When:</b> after any level 3 or higher chat, or whenever a chat shook you, even if it wasn't formally abuse.</p>
-<div class="debrief">
-<div class="chat-msg"><b>1. What happened</b>One line.</div>
-<div class="chat-msg"><b>2. What worked</b>Something you'd repeat.</div>
-<div class="chat-msg"><b>3. What would have helped</b>A macro, a rule, a faster handoff.</div>
-</div>
-<ul class="rules">
-<li>A lead replies within the shift. After levels 4 and 5 they also check in with you personally.</li>
-<li>Once a month the team reads the threads and turns repeated patterns into macros or SOP changes.</li>
-</ul>
-</section>
-<section class="card" id="log">
-<h2>Decision log</h2>
-<p class="lede">Anything decided in Discord that changes how we work gets copied here within a day or two.</p>
-<div class="scroll">
-<table>
-<thead><tr><th>Date</th><th>Situation</th><th>Decision</th><th>Decided by</th></tr></thead>
-<tbody>
-<tr><td>1 Oct 2026</td><td>Failed replacement, refund limit</td><td>Refund only within 3 months. Warranty means replacement.</td><td><span class="mgr">To be confirmed</span></td></tr>
-<tr><td>1 Oct 2026</td><td>G2A order, credentials changed</td><td>Offer assistance (2FA code), not an automatic replacement.</td><td>Manager</td></tr>
-<tr><td>1 Oct 2026</td><td>Blocked and banned customers</td><td>Ban in Warehouse (for our statistics and so every operator knows about the customer) and always add to a group with the reason. Block in PrestaShop (the Blacklist group) with a note in the customer profile once the group is set up. A block after a ban is not mandatory.</td><td><span class="mgr">To be confirmed</span></td></tr>
-<tr><td>1 Oct 2026</td><td>Abusive customers</td><td>Boundary message, final warning, then close the chat and redirect to email.</td><td><span class="mgr">To be confirmed</span></td></tr>
-</tbody>
-</table>
-</div>
-</section>
-<footer>Demo layout. Content is a working draft and not final policy.</footer>
-</main>
-</div>
+
 <script>
 (function () {
-var box = document.getElementById("hl");
-box.addEventListener("change", function () {
-document.body.setAttribute("data-hl", box.checked ? "on" : "off");
-});
-var cb = document.getElementById("chgbox");
-cb.addEventListener("change", function () {
-document.body.setAttribute("data-chg", cb.checked ? "on" : "off");
-});
+  var box = document.getElementById("hl");
+  box.addEventListener("change", function () {
+    document.body.setAttribute("data-hl", box.checked ? "on" : "off");
+  });
+  var cb = document.getElementById("chgbox");
+  cb.addEventListener("change", function () {
+    document.body.setAttribute("data-chg", cb.checked ? "on" : "off");
+  });
 })();
 </script>
 </body>
