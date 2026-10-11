@@ -182,6 +182,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <li><a href="#refunds">Refunds and delivery</a></li>
       <li><a href="#replacements">Replacements</a></li>
       <li><a href="#g2a">G2A orders</a></li>
+      <li><a href="#kinguin">Kinguin orders</a></li>
       <li><a href="#abuse">Abusive customers</a></li>
       <li><a href="#log">Decision log</a></li>
     </ul>
@@ -199,7 +200,11 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <h2>What changed in this revision</h2>
       <p>11 Oct 2026. The same changes are highlighted in blue on the page.</p>
       <ul>
-        <li>Abusive customers, level 1: a small reminder to stay on the subject (we are here to help, not to listen to complaints) replaces "no warning needed".</li>
+        <li>G2A orders: replacements use a Warehouse ticket and the Purchase verification tool, and the Order ID comes from the G2A Dashboard.</li>
+        <li>G2A orders: no 24 to 48 hour promise and no different-game offer, the customer can wait longer.</li>
+        <li>G2A orders: refund if the account was not revealed. Scammers are not banned for now.</li>
+        <li>New empty Kinguin section, to be discussed later.</li>
+        <li>Open item added: G2A refund when the account was already revealed. Decision log row added.</li>
       </ul>
     </div>
     <!--/CHANGES-->
@@ -229,6 +234,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <p class="sub">Still open, needs a decision</p>
       <ol class="open-list" start="8">
         <li class="open-item">Set up the Blacklist group in PrestaShop, so a block actually stops a customer from buying.</li>
+        <li class="open-item"><mark class="chg" id="chg-6">Refund on a G2A order when the account was already revealed: not decided yet.</mark></li>
         <li class="open-item">Tag every closed abusive chat in Live Chat by level? To be looked into.</li>
         <li class="open-item">Operator well-being section: burnout, and passing a chat to another operator instead of arguing with the customer.</li>
       </ol>
@@ -374,14 +380,21 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
         <li>We don't mention the warranty first and we don't rush to replace. <b>Start with assistance.</b></li>
         <li><span class="mgr">Assistance means giving the customer the 2FA code needed to log in to the account. It does not include a replacement.</span> <span class="tag mgr-tag">Manager can change</span></li>
         <li>G2A's own message asks buyers to change the credentials. That voids the warranty we give on our site because we can no longer verify the account, but our manager decided to still offer assistance and warranty on G2A orders.</li>
-        <li>Replacements on G2A orders are done by the operator, the same as on our own site, including when the credentials were changed. Before replacing, the operator verifies the account (see "Verify before you replace" in Replacements).</li>
+        <li>Replacements on G2A orders are done by the operator, the same as on our own site, including when the credentials were changed. Before replacing, the operator verifies the account (see "Verify before you replace" in Replacements). <mark class="chg" id="chg-1">The ticket is created in Warehouse, with the Purchase verification tool, exactly as on the website.</mark></li>
         <li>If the customer changed the email on a G2A order, the warranty is not automatically void. The operator judges it case by case, depending on the customer, and the password alone never counts.</li>
-        <li>G2A has no response deadline, unlike our website.</li>
+        <li>G2A has no response deadline, unlike our website. <mark class="chg" id="chg-2">So the 24 to 48 hour promise and the different-game offer from Replacements do not apply here. The customer can wait longer until we have a replacement.</mark></li>
+        <li><mark class="chg" id="chg-3">Refund on a G2A order: if the account was not revealed, refund, no questions asked.</mark></li>
+        <li><mark class="chg" id="chg-4">We have met scammers on G2A but no resellers yet. We do not ban them for now, it is not necessary yet.</mark></li>
       </ul>
 
       <div class="callout">
-        <p><b>G2A tickets: two places, always.</b> Verify and complete the ticket in the <b>G2A Dashboard</b> as well, not only from the email notification.</p>
+        <p><b>G2A tickets: two places, always.</b> Verify and complete the ticket in the <b>G2A Dashboard</b> as well, not only from the email notification. <mark class="chg" id="chg-5">The Order ID is in the G2A Dashboard. No replacement without it.</mark></p>
       </div>
+    </section>
+
+    <section class="card" id="kinguin">
+      <h2><mark class="chg" id="chg-7">Kinguin orders</mark></h2>
+      <p class="lede"><mark class="chg" id="chg-8">This section is empty for now. We will decide the Kinguin rules later.</mark> <span class="tag open-tag">To be discussed</span></p>
     </section>
 
     <section class="card" id="abuse">
@@ -396,7 +409,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
         <table>
           <thead><tr><th>Level</th><th>Type</th><th>Examples</th><th>What you do</th></tr></thead>
           <tbody>
-            <tr class="lvl l1"><td><span class="badge">1</span></td><td>Tense</td><td>Frustration, rude tone, caps lock, sarcasm, swearing about the shop or the situation: "I've waited two days", "this is unacceptable"</td><td>Not abuse yet. Stay polite and give a clear timeline, then <mark class="chg" id="chg-1">bring the customer back to the subject with a small reminder: we are here to solve the problem, not to listen to complaints. It is a gentle nudge, not a formal warning.</mark></td></tr>
+            <tr class="lvl l1"><td><span class="badge">1</span></td><td>Tense</td><td>Frustration, rude tone, caps lock, sarcasm, swearing about the shop or the situation: "I've waited two days", "this is unacceptable"</td><td>Not abuse yet. Stay polite and give a clear timeline, then bring the customer back to the subject with a small reminder: we are here to solve the problem, not to listen to complaints. It is a gentle nudge, not a formal warning.</td></tr>
             <tr class="lvl l3"><td><span class="badge">2</span></td><td>Personal abuse</td><td>Insults aimed at you, mocking, spamming, continuing after a reminder</td><td>Send a boundary message, then <span class="mgr">one final warning</span>. If it continues, ban the customer in Live Chat. They can continue by email. <span class="tag mgr-tag">Manager can change</span></td></tr>
             <tr class="lvl l4a"><td><span class="badge">3</span></td><td>Severe</td><td>Sexual comments, slurs, discriminatory language, targeting you by name</td><td>Skip the ladder. Ban in Live Chat right away and save the chat as evidence.</td></tr>
           </tbody>
@@ -426,6 +439,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
           <tbody>
             <tr><td>1 Oct 2026</td><td>Failed replacement, refund limit</td><td>Refund only within 3 months. Warranty means replacement.</td><td><span class="mgr">To be confirmed</span></td></tr>
             <tr><td>1 Oct 2026</td><td>G2A order, credentials changed</td><td>Offer assistance (2FA code), not an automatic replacement.</td><td>Manager</td></tr>
+            <tr><td>11 Oct 2026</td><td><mark class="chg" id="chg-9">G2A refunds</mark></td><td><mark class="chg" id="chg-10">Account not revealed: refund, no questions asked. Replacements follow the website rules, with no promise window. Scammers are not banned for now.</mark></td><td><span class="mgr">To be confirmed</span></td></tr>
             <tr><td>1 Oct 2026</td><td>Blocked and banned customers</td><td>Ban in Warehouse (for our statistics and so every operator knows about the customer) and always add to a group with the reason. Block in PrestaShop (the Blacklist group) with a note in the customer profile once the group is set up. A block after a ban is not mandatory.</td><td><span class="mgr">To be confirmed</span></td></tr>
             <tr><td>1 Oct 2026</td><td>Abusive customers</td><td>Three levels. Boundary message, final warning, then ban in Live Chat. No Warehouse ban unless a scammer. Order rights stay, by email only.</td><td><span class="mgr">To be confirmed</span></td></tr>
           </tbody>
