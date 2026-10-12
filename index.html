@@ -201,7 +201,8 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <h2>What changed in this revision</h2>
       <p>12 Oct 2026. The same changes are highlighted in blue on the page.</p>
       <ul>
-        <li>Resellers: if the account was not delivered, force refund the order. If it was already delivered, recover the account and refund the order.</li>
+        <li>Resellers: if the account was already delivered, we recover it and then refund the order. (The line about undelivered orders was a misreading and is removed.)</li>
+        <li>Not delivered, aggressive customer: we can force refund even if they did not ask for a refund, in rare cases.</li>
       </ul>
     </div>
     <!--/CHANGES-->
@@ -306,7 +307,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <p>Resellers are not allowed. If we catch one:</p>
       <ol class="rules">
         <li>Ask them not to purchase from us anymore.</li>
-        <li>Force refund their order. <mark class="chg" id="chg-1">If the account was not delivered yet, we refund and that is it (this has happened in rare cases). If it was already delivered, we recover the account and then refund the order.</mark></li>
+        <li>Force refund their order. If the account was not delivered yet, we refund and that is it (this has happened in rare cases). If it was already delivered, we recover the account and then refund the order.</li>
         <li>Tell them that they will be blacklisted and that all their upcoming orders will be automatically declined, to discourage them from buying again.</li>
         <li>Ban them in Warehouse and add them to the reseller group.</li>
         <li>Block them in PrestaShop (the Blacklist group)*, which is what will decline their upcoming orders automatically.</li>
