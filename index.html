@@ -193,7 +193,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
     <div class="hero">
       <h1>One place for how we handle orders, refunds and difficult chats.</h1>
       <p>If a rule isn't here, it isn't a rule yet. Ask in the SOP channel, and once it's decided it gets added here.</p>
-      <div class="stamp"><span>Version 0.1 (draft)</span><span>Updated 11 Oct 2026</span><span>Owner: to be named</span></div>
+      <div class="stamp"><span>Version 0.1 (draft)</span><span>Updated 12 Oct 2026</span><span>Owner: to be named</span></div>
     </div>
 
     <!--CHANGES-->
@@ -201,8 +201,11 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <h2>What changed in this revision</h2>
       <p>12 Oct 2026. The same changes are highlighted in blue on the page.</p>
       <ul>
-        <li>Angry customer exception: added that it is for our own website only. G2A orders are never refunded once the account was revealed, even if the customer threatens us.</li>
-        <li>G2A orders chapter: same rule added next to the refund line.</li>
+        <li>Angry customer triggers: removed "report us to G2A", because the exception only covers our own website.</li>
+        <li>Replacements: scammers on G2A orders are not banned for now, matching the G2A chapter.</li>
+        <li>Different game offer: "the operator decides" now reads "otherwise the operator decides", so it no longer contradicts asking the manager about new releases.</li>
+        <li>Abusive customers: the channel only changes to email when the customer is banned. "Chapter 1" now names the chapter, since chapters are not numbered on the page.</li>
+        <li>Update date set to 12 Oct 2026.</li>
       </ul>
     </div>
     <!--/CHANGES-->
@@ -266,10 +269,10 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <p>Refund if the customer does any of these:</p>
       <ul class="rules">
         <li>Says they will open a dispute or a chargeback with their bank or payment provider.</li>
-        <li>Threatens to report us to G2A, the payment provider or a consumer authority, or threatens legal action.</li>
+        <li><mark class="chg" id="chg-1">Threatens to report us to the payment provider or a consumer authority, or threatens legal action.</mark></li>
         <li>Threatens a negative review or a public post about us.</li>
       </ul>
-      <div class="callout warn"><p><mark class="chg" id="chg-1"><b>This exception is for our own website only.</b> We do not refund G2A orders at all. The only exception is when the account was not revealed. This holds even if the customer threatens us.</mark></p></div>
+      <div class="callout warn"><p><b>This exception is for our own website only.</b> We do not refund G2A orders at all. The only exception is when the account was not revealed. This holds even if the customer threatens us.</p></div>
       <p>This list is a guide, not a checklist. Customers won't always say it in these words, so use your judgment on what is a real threat and stay flexible with the customer.</p>
       <p>Insults, swearing, caps lock, impatience or simply insisting are <b>not</b> triggers on their own. Insults follow the abusive customers chapter, and the answer on the refund stays the same.</p>
 
@@ -347,7 +350,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
         <li><b>Not working from our side:</b> replacement.</li>
       </ul>
       <div class="callout">
-        <p><b>Zero tolerance for scammers.</b> If the customer is trying to get a free game, there is no replacement and we never refund. Then ban them in Warehouse, add them to the matching group and block them in PrestaShop, as described in Refunds and delivery.</p>
+        <p><b>Zero tolerance for scammers.</b> If the customer is trying to get a free game, there is no replacement and we never refund. Then ban them in Warehouse, add them to the matching group and block them in PrestaShop, as described in Refunds and delivery. <mark class="chg" id="chg-2">On G2A orders we do not ban scammers for now (see G2A orders).</mark></p>
       </div>
 
       <h3>Opening a ticket</h3>
@@ -363,7 +366,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <div class="ladder">
         <div class="step"><div class="n">1</div><div class="t"><b>Same game</b><span>Keep trying to source it.</span></div></div>
         <div class="step"><div class="n">2</div><div class="t"><b>Keep the customer informed</b><span>Talk to them when they come back. Most customers wait.</span></div></div>
-        <div class="step"><div class="n">3</div><div class="t"><b>Offer a different game</b><span>After <span class="mgr">5 days</span> of waiting, the customer can pick another game priced at what they paid, <span class="mgr">within 10% either way</span>. We do not replace an old game with a brand new release, even if the customer paid the same amount. If the customer asks for a new release, the operator asks the manager what to do. <span class="tag mgr-tag">Manager can change</span> The operator decides.</span></div></div>
+        <div class="step"><div class="n">3</div><div class="t"><b>Offer a different game</b><span>After <span class="mgr">5 days</span> of waiting, the customer can pick another game priced at what they paid, <span class="mgr">within 10% either way</span>. We do not replace an old game with a brand new release, even if the customer paid the same amount. If the customer asks for a new release, the operator asks the manager what to do. <span class="tag mgr-tag">Manager can change</span> <mark class="chg" id="chg-3">Otherwise the operator decides.</mark></span></div></div>
         <div class="step"><div class="n">4</div><div class="t"><b>Refund, only if the order is under <span class="mgr">3 months</span> old</b><span><span class="tag mgr-tag">Manager can change</span> The operator decides. After 3 months a refund is practically not possible: the customer keeps waiting for the same game, or takes a different one.</span></div></div>
       </div>
       <p>There is no fixed limit on replacements for a real customer. In practice a customer may get a replacement after 3 months, and another one about 3 months after that. This is not a hard rule. The operator checks the account every time the customer contacts us, and requests that come much more often than that are a sign to look at the account more carefully.</p>
@@ -380,7 +383,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
         <li>Replacements on G2A orders are done by the operator, the same as on our own site, including when the credentials were changed. Before replacing, the operator verifies the account (see "Verify before you replace" in Replacements). The ticket is created in Warehouse, with the Purchase verification tool, exactly as on the website.</li>
         <li>If the customer changed the email on a G2A order, the warranty is not automatically void. The operator judges it case by case, depending on the customer, and the password alone never counts.</li>
         <li>G2A has no response deadline, unlike our website. So the 24 to 48 hour promise and the different-game offer from Replacements do not apply here. The customer can wait longer until we have a replacement.</li>
-        <li>Refund on a G2A order: if the account was not revealed, refund, no questions asked. If the account was revealed, we do not refund, <mark class="chg" id="chg-2">even if the customer threatens us.</mark></li>
+        <li>Refund on a G2A order: if the account was not revealed, refund, no questions asked. If the account was revealed, we do not refund, even if the customer threatens us.</li>
         <li>We have met scammers on G2A but no resellers yet. We do not ban them for now, it is not necessary yet.</li>
       </ul>
 
@@ -417,9 +420,9 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
 
       <h3>Rules at every level</h3>
       <div class="rule-grid">
-        <div class="rule"><strong>Their order rights don't change</strong><p>Warranty and refund eligibility never depend on behavior. Only the channel changes, from chat to email.</p></div>
-        <div class="rule"><strong>Abuse is not a reason to refund</strong><p>Insults do not count as an angry-customer trigger. Refunds follow the rules in chapter 1.</p></div>
-        <div class="rule"><strong>Live Chat ban only</strong><p>No Warehouse ban and no group for abuse. Those are only for scammers and resellers (chapter 1).</p></div>
+        <div class="rule"><strong>Their order rights don't change</strong><p>Warranty and refund eligibility never depend on behavior. <mark class="chg" id="chg-4">If the customer is banned in Live Chat, only the channel changes, from chat to email.</mark></p></div>
+        <div class="rule"><strong>Abuse is not a reason to refund</strong><p>Insults do not count as an angry-customer trigger. Refunds follow the rules in <mark class="chg" id="chg-5">Refunds and delivery</mark>.</p></div>
+        <div class="rule"><strong>Live Chat ban only</strong><p>No Warehouse ban and no group for abuse. Those are only for scammers and resellers <mark class="chg" id="chg-6">(see Refunds and delivery)</mark>.</p></div>
       </div>
 
       <div class="callout warn">
