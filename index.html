@@ -184,6 +184,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <li><a href="#g2a">G2A orders</a></li>
       <li><a href="#kinguin">Kinguin orders</a></li>
       <li><a href="#abuse">Abusive customers</a></li>
+      <li><a href="#wellbeing">Operator well-being</a></li>
       <li><a href="#log">Decision log</a></li>
     </ul>
   </nav>
@@ -200,8 +201,8 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <h2>What changed in this revision</h2>
       <p>12 Oct 2026. The same changes are highlighted in blue on the page.</p>
       <ul>
-        <li>G2A orders: if the account was revealed, we do not refund. The open item on this is closed.</li>
-        <li>Decision log row for G2A refunds updated.</li>
+        <li>New section: Operator well-being. Passing a chat to another operator by Discord message, burnout signs, a break after a hard chat (a guideline), sharing hard chats, and asking for time off.</li>
+        <li>Removed the open item for this section from the manager list.</li>
       </ul>
     </div>
     <!--/CHANGES-->
@@ -232,7 +233,6 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <ol class="open-list" start="8">
         <li class="open-item">Set up the Blacklist group in PrestaShop, so a block actually stops a customer from buying.</li>
         <li class="open-item">Tag every closed abusive chat in Live Chat by level? To be looked into.</li>
-        <li class="open-item">Operator well-being section: burnout, and passing a chat to another operator instead of arguing with the customer.</li>
       </ol>
     </div>
 
@@ -379,7 +379,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
         <li>Replacements on G2A orders are done by the operator, the same as on our own site, including when the credentials were changed. Before replacing, the operator verifies the account (see "Verify before you replace" in Replacements). The ticket is created in Warehouse, with the Purchase verification tool, exactly as on the website.</li>
         <li>If the customer changed the email on a G2A order, the warranty is not automatically void. The operator judges it case by case, depending on the customer, and the password alone never counts.</li>
         <li>G2A has no response deadline, unlike our website. So the 24 to 48 hour promise and the different-game offer from Replacements do not apply here. The customer can wait longer until we have a replacement.</li>
-        <li>Refund on a G2A order: if the account was not revealed, refund, no questions asked. <mark class="chg" id="chg-1">If the account was revealed, we do not refund.</mark></li>
+        <li>Refund on a G2A order: if the account was not revealed, refund, no questions asked. If the account was revealed, we do not refund.</li>
         <li>We have met scammers on G2A but no resellers yet. We do not ban them for now, it is not necessary yet.</li>
       </ul>
 
@@ -426,6 +426,30 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       </div>
     </section>
 
+    <section class="card" id="wellbeing">
+      <h2><mark class="chg" id="chg-1">Operator well-being</mark></h2>
+      <p class="lede"><mark class="chg" id="chg-2">Hard chats wear people down. Passing a chat on is part of the job, never a failure.</mark></p>
+
+      <h3><mark class="chg" id="chg-3">Passing a chat to another operator</mark></h3>
+      <ul class="rules">
+        <li><mark class="chg" id="chg-4">There are three operators per shift, so a colleague is always there to take over.</mark></li>
+        <li><mark class="chg" id="chg-5">Do it when you are getting irritated, you have lost patience, or the customer keeps going after the reminder. Do not argue with the customer.</mark></li>
+        <li><mark class="chg" id="chg-6">Send a Discord message to your colleagues with the customer, the Order ID and where things stand. Tell the customer that a colleague is taking over.</mark></li>
+        <li><mark class="chg" id="chg-7">No penalty, ever. Passing a chat on protects the customer and you.</mark></li>
+      </ul>
+
+      <h3><mark class="chg" id="chg-8">Looking after yourselves</mark></h3>
+      <div class="rule-grid">
+        <div class="rule"><strong><mark class="chg" id="chg-9">Burnout signs</mark></strong><p><mark class="chg" id="chg-10">Shorter replies, dreading the next chat, snapping at customers. Notice it in yourself and in your colleagues, and say something.</mark></p></div>
+        <div class="rule"><strong><mark class="chg" id="chg-11">Break after a hard chat</mark></strong><p><mark class="chg" id="chg-12">Take a short break. This is a guideline, not a fixed rule.</mark></p></div>
+        <div class="rule"><strong><mark class="chg" id="chg-13">Share the hard chats</mark></strong><p><mark class="chg" id="chg-14">Do not let the same person take every difficult customer. Rotate them.</mark></p></div>
+      </div>
+
+      <div class="callout">
+        <p><b><mark class="chg" id="chg-15">Time off:</mark></b> <mark class="chg" id="chg-16">Any operator can ask for time off. Talk to the manager or someone in a higher role. This applies to everyone, including the person who does live chat on shift.</mark></p>
+      </div>
+    </section>
+
     <section class="card" id="log">
       <h2>Decision log</h2>
       <p class="lede">Anything decided in Discord that changes how we work gets copied here within a day or two.</p>
@@ -435,7 +459,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
           <tbody>
             <tr><td>1 Oct 2026</td><td>Failed replacement, refund limit</td><td>Refund only within 3 months. Warranty means replacement.</td><td><span class="mgr">To be confirmed</span></td></tr>
             <tr><td>1 Oct 2026</td><td>G2A order, credentials changed</td><td>Offer assistance (2FA code), not an automatic replacement.</td><td>Manager</td></tr>
-            <tr><td>11 Oct 2026</td><td>G2A refunds</td><td>Account not revealed: refund, no questions asked. <mark class="chg" id="chg-2">Account revealed: no refund.</mark> Replacements follow the website rules, with no promise window. Scammers are not banned for now.</td><td><span class="mgr">To be confirmed</span></td></tr>
+            <tr><td>11 Oct 2026</td><td>G2A refunds</td><td>Account not revealed: refund, no questions asked. Account revealed: no refund. Replacements follow the website rules, with no promise window. Scammers are not banned for now.</td><td><span class="mgr">To be confirmed</span></td></tr>
             <tr><td>1 Oct 2026</td><td>Blocked and banned customers</td><td>Ban in Warehouse (for our statistics and so every operator knows about the customer) and always add to a group with the reason. Block in PrestaShop (the Blacklist group) with a note in the customer profile once the group is set up. A block after a ban is not mandatory.</td><td><span class="mgr">To be confirmed</span></td></tr>
             <tr><td>1 Oct 2026</td><td>Abusive customers</td><td>Three levels. Boundary message, final warning, then ban in Live Chat. No Warehouse ban unless a scammer. Order rights stay, by email only.</td><td><span class="mgr">To be confirmed</span></td></tr>
           </tbody>
