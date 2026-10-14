@@ -193,19 +193,16 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
     <div class="hero">
       <h1>One place for how we handle orders, refunds and difficult chats.</h1>
       <p>If a rule isn't here, it isn't a rule yet. Ask in the SOP channel, and once it's decided it gets added here.</p>
-      <div class="stamp"><span>Version 0.1 (draft)</span><span>Updated 12 Oct 2026</span><span>Owner: to be named</span></div>
+      <div class="stamp"><span>Version 0.1 (draft)</span><span>Updated 14 Oct 2026</span><span>Owner: to be named</span></div>
     </div>
 
     <!--CHANGES-->
     <div class="changes" id="changes">
       <h2>What changed in this revision</h2>
-      <p>12 Oct 2026. The same changes are highlighted in blue on the page.</p>
+      <p>14 Oct 2026. The same changes are highlighted in blue on the page.</p>
       <ul>
-        <li>Angry customer triggers: removed "report us to G2A", because the exception only covers our own website.</li>
-        <li>Replacements: scammers on G2A orders are not banned for now, matching the G2A chapter.</li>
-        <li>Different game offer: "the operator decides" now reads "otherwise the operator decides", so it no longer contradicts asking the manager about new releases.</li>
-        <li>Abusive customers: the channel only changes to email when the customer is banned. "Chapter 1" now names the chapter, since chapters are not numbered on the page.</li>
-        <li>Update date set to 12 Oct 2026.</li>
+        <li>Kinguin orders: the section is now filled in from your Kinguin ticket document (SLA, general rules, replacements, refunds, early account recovery, Live Chat and other requests).</li>
+        <li>Manager list: Kinguin replacement limit added (two per product). Open item added: the Kinguin SLA timeframe and who opens replacement tickets in Zendesk.</li>
       </ul>
     </div>
     <!--/CHANGES-->
@@ -230,10 +227,12 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
         <li><b>Dead on arrival window</b>, currently 2 hours after delivery.</li>
         <li><b>"Angry customer" refund exception</b>: which triggers count.</li>
         <li><b>What G2A assistance covers</b>, currently the 2FA code only.</li>
+        <li><b><mark class="chg" id="chg-41">Kinguin replacement limit</mark></b><mark class="chg" id="chg-42">, currently two per product.</mark></li>
         <li><b>Warnings before banning an abusive customer</b>, currently a boundary message and one final warning.</li>
       </ol>
       <p class="sub">Still open, needs a decision</p>
-      <ol class="open-list" start="8">
+      <ol class="open-list" start="9">
+        <li class="open-item"><mark class="chg" id="chg-40">Kinguin: write down the SLA timeframe, and name who opens replacement tickets in Zendesk.</mark></li>
         <li class="open-item">Set up the Blacklist group in PrestaShop, so a block actually stops a customer from buying.</li>
         <li class="open-item">Tag every closed abusive chat in Live Chat by level? To be looked into.</li>
       </ol>
@@ -269,7 +268,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <p>Refund if the customer does any of these:</p>
       <ul class="rules">
         <li>Says they will open a dispute or a chargeback with their bank or payment provider.</li>
-        <li><mark class="chg" id="chg-1">Threatens to report us to the payment provider or a consumer authority, or threatens legal action.</mark></li>
+        <li>Threatens to report us to the payment provider or a consumer authority, or threatens legal action.</li>
         <li>Threatens a negative review or a public post about us.</li>
       </ul>
       <div class="callout warn"><p><b>This exception is for our own website only.</b> We do not refund G2A orders at all. The only exception is when the account was not revealed. This holds even if the customer threatens us.</p></div>
@@ -350,7 +349,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
         <li><b>Not working from our side:</b> replacement.</li>
       </ul>
       <div class="callout">
-        <p><b>Zero tolerance for scammers.</b> If the customer is trying to get a free game, there is no replacement and we never refund. Then ban them in Warehouse, add them to the matching group and block them in PrestaShop, as described in Refunds and delivery. <mark class="chg" id="chg-2">On G2A orders we do not ban scammers for now (see G2A orders).</mark></p>
+        <p><b>Zero tolerance for scammers.</b> If the customer is trying to get a free game, there is no replacement and we never refund. Then ban them in Warehouse, add them to the matching group and block them in PrestaShop, as described in Refunds and delivery. On G2A orders we do not ban scammers for now (see G2A orders).</p>
       </div>
 
       <h3>Opening a ticket</h3>
@@ -366,7 +365,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <div class="ladder">
         <div class="step"><div class="n">1</div><div class="t"><b>Same game</b><span>Keep trying to source it.</span></div></div>
         <div class="step"><div class="n">2</div><div class="t"><b>Keep the customer informed</b><span>Talk to them when they come back. Most customers wait.</span></div></div>
-        <div class="step"><div class="n">3</div><div class="t"><b>Offer a different game</b><span>After <span class="mgr">5 days</span> of waiting, the customer can pick another game priced at what they paid, <span class="mgr">within 10% either way</span>. We do not replace an old game with a brand new release, even if the customer paid the same amount. If the customer asks for a new release, the operator asks the manager what to do. <span class="tag mgr-tag">Manager can change</span> <mark class="chg" id="chg-3">Otherwise the operator decides.</mark></span></div></div>
+        <div class="step"><div class="n">3</div><div class="t"><b>Offer a different game</b><span>After <span class="mgr">5 days</span> of waiting, the customer can pick another game priced at what they paid, <span class="mgr">within 10% either way</span>. We do not replace an old game with a brand new release, even if the customer paid the same amount. If the customer asks for a new release, the operator asks the manager what to do. <span class="tag mgr-tag">Manager can change</span> Otherwise the operator decides.</span></div></div>
         <div class="step"><div class="n">4</div><div class="t"><b>Refund, only if the order is under <span class="mgr">3 months</span> old</b><span><span class="tag mgr-tag">Manager can change</span> The operator decides. After 3 months a refund is practically not possible: the customer keeps waiting for the same game, or takes a different one.</span></div></div>
       </div>
       <p>There is no fixed limit on replacements for a real customer. In practice a customer may get a replacement after 3 months, and another one about 3 months after that. This is not a hard rule. The operator checks the account every time the customer contacts us, and requests that come much more often than that are a sign to look at the account more carefully.</p>
@@ -394,7 +393,67 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
 
     <section class="card" id="kinguin">
       <h2>Kinguin orders</h2>
-      <p class="lede">This section is empty for now. We will decide the Kinguin rules later. <span class="tag open-tag">To be discussed</span></p>
+      <p class="lede"><mark class="chg" id="chg-1">Kinguin tickets have a deadline. Verify first, answer formally, and never leave a ticket unattended.</mark></p>
+
+      <div class="callout warn">
+        <p><mark class="chg" id="chg-2"><b>Answer within the Kinguin SLA.</b> If we miss it, Kinguin may refund the customer automatically, even when the refund is not justified.</mark> <span class="tag open-tag">Open</span> <mark class="chg" id="chg-3">The SLA timeframe is not written down here yet.</mark></p>
+      </div>
+
+      <h3><mark class="chg" id="chg-4">General rules</mark></h3>
+      <ul class="rules">
+        <li><mark class="chg" id="chg-5">Verify the order and the account before you handle any ticket. Make no assumptions about the customer or the account history before checking.</mark></li>
+        <li><mark class="chg" id="chg-6">Write formally, clearly and professionally.</mark></li>
+        <li><mark class="chg" id="chg-7">Review every ticket and resolve it, or at least answer it, as quickly as possible. No ticket is left unattended.</mark></li>
+        <li><mark class="chg" id="chg-8">A customer can get at most <span class="mgr">two replacements</span> for the same product.</mark> <span class="tag mgr-tag">Manager can change</span></li>
+      </ul>
+
+      <h3><mark class="chg" id="chg-9">Replacements</mark></h3>
+      <p><mark class="chg" id="chg-10">A replacement can be offered when:</mark></p>
+      <ul class="rules">
+        <li><mark class="chg" id="chg-11">The customer chose replacement as the preferred resolution in the ticket.</mark></li>
+        <li><mark class="chg" id="chg-12">The operator proposes a replacement during the conversation and the customer agrees.</mark></li>
+      </ul>
+      <p><mark class="chg" id="chg-13">When a replacement is agreed during the conversation:</mark></p>
+      <ol class="rules">
+        <li><mark class="chg" id="chg-14">Tell the customer to escalate the ticket to Kinguin Support.</mark></li>
+        <li><mark class="chg" id="chg-15">Tell the person who handles tickets in Zendesk, so they can open the replacement ticket.</mark> <span class="tag open-tag">Open</span> <mark class="chg" id="chg-16">Who this is should be named here.</mark></li>
+      </ol>
+
+      <h3><mark class="chg" id="chg-17">Refunds</mark></h3>
+      <p><mark class="chg" id="chg-18">A refund is the last resort: when the customer refuses a replacement, or the case clearly justifies it. Never approve a refund without verifying the account first.</mark></p>
+      <div class="rule-grid">
+        <div class="rule"><strong><mark class="chg" id="chg-19">The customer refuses a replacement</mark></strong>
+          <ul class="rules">
+            <li><mark class="chg" id="chg-20">Look at the case history and the order date.</mark></li>
+            <li><mark class="chg" id="chg-21">Recent order: a refund is possible if justified, meaning the console was not activated and the account can be recovered.</mark></li>
+            <li><mark class="chg" id="chg-22">Older order, for example about a year old: refund only in exceptional cases. Present the replacement as the recommended solution for both sides.</mark></li>
+          </ul></div>
+        <div class="rule"><strong><mark class="chg" id="chg-23">The customer asks for a refund directly</mark></strong>
+          <ul class="rules">
+            <li><mark class="chg" id="chg-24">Examples: an accidental purchase, or the customer cannot use the account.</mark></li>
+            <li><mark class="chg" id="chg-25">First check whether the account was used and whether the console was activated.</mark></li>
+            <li><mark class="chg" id="chg-26">Not used and console not activated: a refund can be issued after confirming eligibility.</mark></li>
+            <li><mark class="chg" id="chg-27">Used, or console activated: explain to the customer why we cannot refund under the same conditions.</mark></li>
+          </ul></div>
+      </div>
+      <p><mark class="chg" id="chg-28">Each final decision depends on the specific case.</mark></p>
+
+      <h3><mark class="chg" id="chg-29">Early account recovery</mark></h3>
+      <p><mark class="chg" id="chg-30">If the ticket is about an account that was resold about three months ago, and its next scheduled recovery is due within the next few days, you can recover it early:</mark></p>
+      <ol class="rules">
+        <li><mark class="chg" id="chg-31">Check the account history and the date of the latest sale.</mark></li>
+        <li><mark class="chg" id="chg-32">Confirm that the next scheduled recovery is due within the next few days.</mark></li>
+        <li><mark class="chg" id="chg-33">Recover the account early, if the circumstances allow it.</mark></li>
+        <li><mark class="chg" id="chg-34">Send the new password to the customer through the Kinguin ticket, so they can keep using the account.</mark></li>
+      </ol>
+      <p><mark class="chg" id="chg-35">Only do this after checking the specific account.</mark></p>
+
+      <h3><mark class="chg" id="chg-36">Everything else</mark></h3>
+      <ul class="rules">
+        <li><mark class="chg" id="chg-37">If Live Chat would solve it faster, you can send the customer there. Explain why, clearly and professionally.</mark></li>
+        <li><mark class="chg" id="chg-38">Any other request is handled the same way as for customers of our own website.</mark></li>
+        <li><mark class="chg" id="chg-39">A case not covered here is discussed and decided case by case before acting, so we stay consistent and every exception is documented.</mark></li>
+      </ul>
     </section>
 
     <section class="card" id="abuse">
@@ -420,9 +479,9 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
 
       <h3>Rules at every level</h3>
       <div class="rule-grid">
-        <div class="rule"><strong>Their order rights don't change</strong><p>Warranty and refund eligibility never depend on behavior. <mark class="chg" id="chg-4">If the customer is banned in Live Chat, only the channel changes, from chat to email.</mark></p></div>
-        <div class="rule"><strong>Abuse is not a reason to refund</strong><p>Insults do not count as an angry-customer trigger. Refunds follow the rules in <mark class="chg" id="chg-5">Refunds and delivery</mark>.</p></div>
-        <div class="rule"><strong>Live Chat ban only</strong><p>No Warehouse ban and no group for abuse. Those are only for scammers and resellers <mark class="chg" id="chg-6">(see Refunds and delivery)</mark>.</p></div>
+        <div class="rule"><strong>Their order rights don't change</strong><p>Warranty and refund eligibility never depend on behavior. If the customer is banned in Live Chat, only the channel changes, from chat to email.</p></div>
+        <div class="rule"><strong>Abuse is not a reason to refund</strong><p>Insults do not count as an angry-customer trigger. Refunds follow the rules in Refunds and delivery.</p></div>
+        <div class="rule"><strong>Live Chat ban only</strong><p>No Warehouse ban and no group for abuse. Those are only for scammers and resellers (see Refunds and delivery).</p></div>
       </div>
 
       <div class="callout warn">
