@@ -68,6 +68,22 @@ nav.toc ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 6px; o
 @media (min-width: 960px) { nav.toc ul { flex-direction: column; overflow: visible; } }
 nav.toc a { display: block; padding: 7px 12px; border-radius: 8px; text-decoration: none; color: var(--ink-soft); font-weight: 500; font-size: 15px; white-space: nowrap; }
 nav.toc a:hover { background: var(--surface); color: var(--ink); }
+.toc-label { display: none; }
+.to-sections { display: none; }
+@media (max-width: 959px) {
+  html { scroll-padding-top: 16px; }
+  .topbar { position: static; }
+  .topbar-in { padding: 10px 16px; gap: 6px 12px; }
+  .brand { font-size: 17px; }
+  .switch { font-size: 13px; }
+  .wrap { padding: 20px 16px 96px; gap: 20px; }
+  nav.toc { position: static; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 12px 14px; }
+  .toc-label { display: block; margin: 0 4px 8px; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-soft); }
+  nav.toc ul { flex-wrap: wrap; overflow: visible; gap: 8px; }
+  nav.toc li { flex: 1 1 calc(50% - 8px); min-width: 0; }
+  nav.toc a { white-space: normal; text-align: center; line-height: 1.3; padding: 10px 8px; font-size: 14px; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 10px; }
+  .to-sections { display: flex; align-items: center; gap: 6px; position: fixed; right: 16px; bottom: calc(env(safe-area-inset-bottom, 0px) + 16px); z-index: 20; padding: 10px 14px; border-radius: 999px; background: var(--ink); color: var(--surface); font-size: 14px; font-weight: 600; text-decoration: none; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
+}
 
 main { min-width: 0; }
 .hero { background: var(--ink); color: var(--bg); border-radius: 18px; padding: 32px 30px; margin-bottom: 22px; }
@@ -177,8 +193,10 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
 </header>
 
 <div class="wrap">
-  <nav class="toc" aria-label="Sections">
+  <nav class="toc" id="sections" aria-label="Sections">
+    <p class="toc-label">Jump to a section</p>
     <ul>
+      <li><a href="#board">Manager review</a></li>
       <li><a href="#refunds">Refunds and delivery</a></li>
       <li><a href="#replacements">Replacements</a></li>
       <li><a href="#g2a">G2A orders</a></li>
@@ -204,6 +222,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
         <li>Kinguin replacements: the operator tells someone in a higher role, who opens the replacement ticket in Zendesk.</li>
         <li>Kinguin general rules: we are more tolerant with Kinguin customers, but not with scammers. A real scammer is reported to someone in a higher role.</li>
         <li>Both open items closed. Still open: the Blacklist group (Manu) and the decision log.</li>
+        <li>Phone layout: the sections now show as a grid of buttons under "Jump to a section", with a "Sections" button in the corner to get back to it. The top bar no longer stays stuck on screen on phones.</li>
       </ul>
     </div>
     <!--/CHANGES-->
@@ -577,6 +596,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
 
     <footer>Draft for manager review. Not final policy until approved.</footer>
   </main>
+  <a class="to-sections" href="#sections" aria-label="Back to the list of sections">&#8593; Sections</a>
 </div>
 
 <script>
