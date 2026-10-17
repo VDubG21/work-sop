@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Support Operations Handbook (demo)</title>
+<title>Support Operations Handbook (draft for review)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -168,7 +168,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
 
 <header class="topbar">
   <div class="topbar-in">
-    <div><span class="brand">Support Operations Handbook</span> <span class="meta">&nbsp;Demo version</span></div>
+    <div><span class="brand">Support Operations Handbook</span> <span class="meta">&nbsp;Draft for manager review</span></div>
     <div style="display:flex;gap:18px;flex-wrap:wrap">
       <label class="switch"><input type="checkbox" id="chgbox" checked style="accent-color:var(--chg-line)"> Highlight latest changes</label>
       <label class="switch"><input type="checkbox" id="hl" checked> Highlight manager decisions</label>
@@ -193,16 +193,16 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
     <div class="hero">
       <h1>One place for how we handle orders, refunds and difficult chats.</h1>
       <p>If a rule isn't here, it isn't a rule yet. Ask in the SOP channel, and once it's decided it gets added here.</p>
-      <div class="stamp"><span>Version 0.1 (draft)</span><span>Updated 14 Oct 2026</span><span>Owner: to be named</span></div>
+      <div class="stamp"><span>Version 0.2 (draft for manager review)</span><span>Updated 17 Oct 2026</span><span>Owner: to be named</span></div>
     </div>
 
     <!--CHANGES-->
     <div class="changes" id="changes">
       <h2>What changed in this revision</h2>
-      <p>14 Oct 2026. The same changes are highlighted in blue on the page.</p>
+      <p>17 Oct 2026. The same changes are highlighted in blue on the page.</p>
       <ul>
-        <li>Kinguin orders: the section is now filled in from your Kinguin ticket document (SLA, general rules, replacements, refunds, early account recovery, Live Chat and other requests).</li>
-        <li>Manager list: Kinguin replacement limit added (two per product). Open item added: the Kinguin SLA timeframe and who opens replacement tickets in Zendesk.</li>
+        <li>Prepared for manager review: version 0.2, marked as a draft for review instead of a demo.</li>
+        <li>The manager list at the top now ends with every open question in one place, so the review can be answered point by point.</li>
       </ul>
     </div>
     <!--/CHANGES-->
@@ -218,8 +218,8 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
     </div>
 
     <div class="board" id="board">
-      <h2>For the manager: what you can adjust</h2>
-      <p>Everything amber or violet in this document, in one list.</p>
+      <h2><mark class="chg" id="chg-1">For the manager: please review</mark></h2>
+      <p><mark class="chg" id="chg-2">Read the page, then go through this list. The first part is what is already set but yours to change (amber on the page). The second part is still open and needs your answer (violet).</mark></p>
       <ol>
         <li><b>Refund cutoff</b> for failed replacements, currently 3 months.</li>
         <li><b>Replacement promise</b>, currently 24 to 48 hours.</li>
@@ -227,14 +227,22 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
         <li><b>Dead on arrival window</b>, currently 2 hours after delivery.</li>
         <li><b>"Angry customer" refund exception</b>: which triggers count.</li>
         <li><b>What G2A assistance covers</b>, currently the 2FA code only.</li>
-        <li><b><mark class="chg" id="chg-41">Kinguin replacement limit</mark></b><mark class="chg" id="chg-42">, currently two per product.</mark></li>
+        <li><b>Kinguin replacement limit</b>, currently two per product.</li>
         <li><b>Warnings before banning an abusive customer</b>, currently a boundary message and one final warning.</li>
       </ol>
-      <p class="sub">Still open, needs a decision</p>
+      <p class="sub"><mark class="chg" id="chg-3">Still open, needs your answer</mark></p>
       <ol class="open-list" start="9">
-        <li class="open-item"><mark class="chg" id="chg-40">Kinguin: write down the SLA timeframe, and name who opens replacement tickets in Zendesk.</mark></li>
+        <li class="open-item">Kinguin: write down the SLA timeframe, and name who opens replacement tickets in Zendesk.</li>
         <li class="open-item">Set up the Blacklist group in PrestaShop, so a block actually stops a customer from buying.</li>
         <li class="open-item">Tag every closed abusive chat in Live Chat by level? To be looked into.</li>
+        <li class="open-item"><mark class="chg" id="chg-4">After a force refund on an undelivered order, or an exception refund for an unused, recoverable account: do we also ban the customer in Warehouse, or is the refund the end of it?</mark></li>
+        <li class="open-item"><mark class="chg" id="chg-5">Website response deadline: the G2A chapter says "G2A has no response deadline, unlike our website". What is our website deadline?</mark></li>
+        <li class="open-item"><mark class="chg" id="chg-6">G2A orders with changed credentials: is this the rule? Start with the 2FA code. If that does not solve it, verify the account, then replace. An email change is judged case by case.</mark></li>
+        <li class="open-item"><mark class="chg" id="chg-7">G2A refunds: where is the refund made, and who issues it?</mark></li>
+        <li class="open-item"><mark class="chg" id="chg-8">G2A scammers: we do not ban them for now. Do we also refuse the replacement, as zero tolerance suggests?</mark></li>
+        <li class="open-item"><mark class="chg" id="chg-9">Kinguin differs from the other channels. Please confirm each: at most two replacements (no limit elsewhere); refunds still possible on orders about a year old in exceptional cases (3-month cutoff on the website); the console activation check (should operators check it on website and G2A orders too?); and whether the website refund exception and the scammer rules apply on Kinguin.</mark></li>
+        <li class="open-item"><mark class="chg" id="chg-10">Decision log: confirm the rows marked "To be confirmed", and say whether the newer decisions should be logged in your name.</mark></li>
+        <li class="open-item"><mark class="chg" id="chg-11">Who owns this document and approves future changes?</mark></li>
       </ol>
     </div>
 
@@ -393,66 +401,66 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
 
     <section class="card" id="kinguin">
       <h2>Kinguin orders</h2>
-      <p class="lede"><mark class="chg" id="chg-1">Kinguin tickets have a deadline. Verify first, answer formally, and never leave a ticket unattended.</mark></p>
+      <p class="lede">Kinguin tickets have a deadline. Verify first, answer formally, and never leave a ticket unattended.</p>
 
       <div class="callout warn">
-        <p><mark class="chg" id="chg-2"><b>Answer within the Kinguin SLA.</b> If we miss it, Kinguin may refund the customer automatically, even when the refund is not justified.</mark> <span class="tag open-tag">Open</span> <mark class="chg" id="chg-3">The SLA timeframe is not written down here yet.</mark></p>
+        <p><b>Answer within the Kinguin SLA.</b> If we miss it, Kinguin may refund the customer automatically, even when the refund is not justified. <span class="tag open-tag">Open</span> The SLA timeframe is not written down here yet.</p>
       </div>
 
-      <h3><mark class="chg" id="chg-4">General rules</mark></h3>
+      <h3>General rules</h3>
       <ul class="rules">
-        <li><mark class="chg" id="chg-5">Verify the order and the account before you handle any ticket. Make no assumptions about the customer or the account history before checking.</mark></li>
-        <li><mark class="chg" id="chg-6">Write formally, clearly and professionally.</mark></li>
-        <li><mark class="chg" id="chg-7">Review every ticket and resolve it, or at least answer it, as quickly as possible. No ticket is left unattended.</mark></li>
-        <li><mark class="chg" id="chg-8">A customer can get at most <span class="mgr">two replacements</span> for the same product.</mark> <span class="tag mgr-tag">Manager can change</span></li>
+        <li>Verify the order and the account before you handle any ticket. Make no assumptions about the customer or the account history before checking.</li>
+        <li>Write formally, clearly and professionally.</li>
+        <li>Review every ticket and resolve it, or at least answer it, as quickly as possible. No ticket is left unattended.</li>
+        <li>A customer can get at most <span class="mgr">two replacements</span> for the same product. <span class="tag mgr-tag">Manager can change</span></li>
       </ul>
 
-      <h3><mark class="chg" id="chg-9">Replacements</mark></h3>
-      <p><mark class="chg" id="chg-10">A replacement can be offered when:</mark></p>
+      <h3>Replacements</h3>
+      <p>A replacement can be offered when:</p>
       <ul class="rules">
-        <li><mark class="chg" id="chg-11">The customer chose replacement as the preferred resolution in the ticket.</mark></li>
-        <li><mark class="chg" id="chg-12">The operator proposes a replacement during the conversation and the customer agrees.</mark></li>
+        <li>The customer chose replacement as the preferred resolution in the ticket.</li>
+        <li>The operator proposes a replacement during the conversation and the customer agrees.</li>
       </ul>
-      <p><mark class="chg" id="chg-13">When a replacement is agreed during the conversation:</mark></p>
+      <p>When a replacement is agreed during the conversation:</p>
       <ol class="rules">
-        <li><mark class="chg" id="chg-14">Tell the customer to escalate the ticket to Kinguin Support.</mark></li>
-        <li><mark class="chg" id="chg-15">Tell the person who handles tickets in Zendesk, so they can open the replacement ticket.</mark> <span class="tag open-tag">Open</span> <mark class="chg" id="chg-16">Who this is should be named here.</mark></li>
+        <li>Tell the customer to escalate the ticket to Kinguin Support.</li>
+        <li>Tell the person who handles tickets in Zendesk, so they can open the replacement ticket. <span class="tag open-tag">Open</span> Who this is should be named here.</li>
       </ol>
 
-      <h3><mark class="chg" id="chg-17">Refunds</mark></h3>
-      <p><mark class="chg" id="chg-18">A refund is the last resort: when the customer refuses a replacement, or the case clearly justifies it. Never approve a refund without verifying the account first.</mark></p>
+      <h3>Refunds</h3>
+      <p>A refund is the last resort: when the customer refuses a replacement, or the case clearly justifies it. Never approve a refund without verifying the account first.</p>
       <div class="rule-grid">
-        <div class="rule"><strong><mark class="chg" id="chg-19">The customer refuses a replacement</mark></strong>
+        <div class="rule"><strong>The customer refuses a replacement</strong>
           <ul class="rules">
-            <li><mark class="chg" id="chg-20">Look at the case history and the order date.</mark></li>
-            <li><mark class="chg" id="chg-21">Recent order: a refund is possible if justified, meaning the console was not activated and the account can be recovered.</mark></li>
-            <li><mark class="chg" id="chg-22">Older order, for example about a year old: refund only in exceptional cases. Present the replacement as the recommended solution for both sides.</mark></li>
+            <li>Look at the case history and the order date.</li>
+            <li>Recent order: a refund is possible if justified, meaning the console was not activated and the account can be recovered.</li>
+            <li>Older order, for example about a year old: refund only in exceptional cases. Present the replacement as the recommended solution for both sides.</li>
           </ul></div>
-        <div class="rule"><strong><mark class="chg" id="chg-23">The customer asks for a refund directly</mark></strong>
+        <div class="rule"><strong>The customer asks for a refund directly</strong>
           <ul class="rules">
-            <li><mark class="chg" id="chg-24">Examples: an accidental purchase, or the customer cannot use the account.</mark></li>
-            <li><mark class="chg" id="chg-25">First check whether the account was used and whether the console was activated.</mark></li>
-            <li><mark class="chg" id="chg-26">Not used and console not activated: a refund can be issued after confirming eligibility.</mark></li>
-            <li><mark class="chg" id="chg-27">Used, or console activated: explain to the customer why we cannot refund under the same conditions.</mark></li>
+            <li>Examples: an accidental purchase, or the customer cannot use the account.</li>
+            <li>First check whether the account was used and whether the console was activated.</li>
+            <li>Not used and console not activated: a refund can be issued after confirming eligibility.</li>
+            <li>Used, or console activated: explain to the customer why we cannot refund under the same conditions.</li>
           </ul></div>
       </div>
-      <p><mark class="chg" id="chg-28">Each final decision depends on the specific case.</mark></p>
+      <p>Each final decision depends on the specific case.</p>
 
-      <h3><mark class="chg" id="chg-29">Early account recovery</mark></h3>
-      <p><mark class="chg" id="chg-30">If the ticket is about an account that was resold about three months ago, and its next scheduled recovery is due within the next few days, you can recover it early:</mark></p>
+      <h3>Early account recovery</h3>
+      <p>If the ticket is about an account that was resold about three months ago, and its next scheduled recovery is due within the next few days, you can recover it early:</p>
       <ol class="rules">
-        <li><mark class="chg" id="chg-31">Check the account history and the date of the latest sale.</mark></li>
-        <li><mark class="chg" id="chg-32">Confirm that the next scheduled recovery is due within the next few days.</mark></li>
-        <li><mark class="chg" id="chg-33">Recover the account early, if the circumstances allow it.</mark></li>
-        <li><mark class="chg" id="chg-34">Send the new password to the customer through the Kinguin ticket, so they can keep using the account.</mark></li>
+        <li>Check the account history and the date of the latest sale.</li>
+        <li>Confirm that the next scheduled recovery is due within the next few days.</li>
+        <li>Recover the account early, if the circumstances allow it.</li>
+        <li>Send the new password to the customer through the Kinguin ticket, so they can keep using the account.</li>
       </ol>
-      <p><mark class="chg" id="chg-35">Only do this after checking the specific account.</mark></p>
+      <p>Only do this after checking the specific account.</p>
 
-      <h3><mark class="chg" id="chg-36">Everything else</mark></h3>
+      <h3>Everything else</h3>
       <ul class="rules">
-        <li><mark class="chg" id="chg-37">If Live Chat would solve it faster, you can send the customer there. Explain why, clearly and professionally.</mark></li>
-        <li><mark class="chg" id="chg-38">Any other request is handled the same way as for customers of our own website.</mark></li>
-        <li><mark class="chg" id="chg-39">A case not covered here is discussed and decided case by case before acting, so we stay consistent and every exception is documented.</mark></li>
+        <li>If Live Chat would solve it faster, you can send the customer there. Explain why, clearly and professionally.</li>
+        <li>Any other request is handled the same way as for customers of our own website.</li>
+        <li>A case not covered here is discussed and decided case by case before acting, so we stay consistent and every exception is documented.</li>
       </ul>
     </section>
 
@@ -556,7 +564,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       </div>
     </section>
 
-    <footer>Demo layout. Content is a working draft and not final policy.</footer>
+    <footer>Draft for manager review. Not final policy until approved.</footer>
   </main>
 </div>
 
