@@ -68,6 +68,17 @@ nav.toc ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 6px; o
 @media (min-width: 960px) { nav.toc ul { flex-direction: column; overflow: visible; } }
 nav.toc a { display: block; padding: 7px 12px; border-radius: 8px; text-decoration: none; color: var(--ink-soft); font-weight: 500; font-size: 15px; white-space: nowrap; }
 nav.toc a:hover { background: var(--surface); color: var(--ink); }
+.faq-search { width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; padding: 11px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); color: var(--ink); margin: 6px 0 12px; }
+.faq details { border: 1px solid var(--line); border-radius: 12px; background: var(--bg); margin: 8px 0; }
+.faq summary { cursor: pointer; padding: 12px 14px; font-weight: 600; line-height: 1.4; display: flex; gap: 10px; align-items: baseline; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::before { content: "+"; font-weight: 700; color: var(--brand); flex: none; width: 12px; }
+.faq details[open] summary::before { content: "\2212"; }
+.faq .chan { flex: none; font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--ink-soft); background: var(--surface); }
+.faq .ans { padding: 0 14px 12px 36px; }
+.faq .ans p { margin: 0 0 8px; }
+.faq .ans a.more { font-size: 14px; font-weight: 600; }
+.faq-none { display: none; color: var(--ink-soft); }
 .toc-label { display: none; }
 .to-sections { display: none; }
 @media (max-width: 959px) {
@@ -196,6 +207,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
   <nav class="toc" id="sections" aria-label="Sections">
     <p class="toc-label">Jump to a section</p>
     <ul>
+      <li><a href="#faq">Quick answers</a></li>
       <li><a href="#board">Manager review</a></li>
       <li><a href="#refunds">Refunds and delivery</a></li>
       <li><a href="#replacements">Replacements</a></li>
@@ -219,10 +231,8 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <h2>What changed in this revision</h2>
       <p>17 Oct 2026. The same changes are highlighted in blue on the page.</p>
       <ul>
-        <li>Kinguin replacements: the operator tells someone in a higher role, who opens the replacement ticket in Zendesk.</li>
-        <li>Kinguin general rules: we are more tolerant with Kinguin customers, but not with scammers. A real scammer is reported to someone in a higher role.</li>
-        <li>Both open items closed. Still open: the Blacklist group (Manu) and the decision log.</li>
-        <li>Phone layout: the sections now show as a grid of buttons under "Jump to a section", with a "Sections" button in the corner to get back to it. The top bar no longer stays stuck on screen on phones.</li>
+        <li>New section near the top: Quick answers. Fourteen common operator questions, each with the answer that applies today and a link to the full rule, plus a search box. It says clearly that this page wins over older Discord messages.</li>
+        <li>Quick answers is first in the section menu.</li>
       </ul>
     </div>
     <!--/CHANGES-->
@@ -256,6 +266,27 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
         <li class="open-item">Decision log: confirm the rows marked "To be confirmed", and say whether the newer decisions should be logged in your name.</li>
       </ol>
     </div>
+
+    <section class="card faq" id="faq">
+      <h2><mark class="chg" id="chg-15">Quick answers</mark></h2>
+      <p class="lede"><mark class="chg" id="chg-16">The questions operators ask most, with the answer that applies today. If an older Discord message says something different, this page wins.</mark></p>
+      <input class="faq-search" id="faqq" type="search" placeholder="Search, e.g. G2A, Order ID, chargeback" aria-label="Search quick answers">
+        <details><summary><span class="chan">G2A</span><span><mark class="chg" id="chg-1">The customer changed the account details. Do they still have warranty?</mark></span></summary><div class="ans"><p><b>Yes.</b> G2A orders keep the warranty even when the credentials were changed. Start with assistance: give the 2FA code. If that does not solve it, verify the account, then replace.</p><p>If the email was changed, we try to work around it. A changed password alone never counts.</p><a class="more" href="#g2a">Full rule &rarr;</a></div></details>
+        <details><summary><span class="chan">Website</span><span><mark class="chg" id="chg-2">The customer changed the email. Do they still have warranty?</mark></span></summary><div class="ans"><p><b>No.</b> On our website an email change voids the warranty, because we can no longer verify the account. No replacement and no refund. A changed password alone does <b>not</b> void it.</p><a class="more" href="#replacements">Full rule &rarr;</a></div></details>
+        <details><summary><span class="chan">Website</span><span><mark class="chg" id="chg-3">The customer wants a refund for a delivered account.</mark></span></summary><div class="ans"><p>Our TOS gives no refunds, so explain that first. If they insist, verify the account. Not used and recoverable: refund as an exception, no ban. Used: no refund, unless they threaten a dispute, a chargeback, a report or a bad review.</p><a class="more" href="#refunds">Full rule &rarr;</a></div></details>
+        <details><summary><span class="chan">Website</span><span><mark class="chg" id="chg-4">The customer threatens a dispute, a chargeback or a bad review.</mark></span></summary><div class="ans"><p>Refund, then ban them in Warehouse and add them to the matching group. Never for a scammer. Stay polite and admit nothing: the chat is evidence.</p><p>This does <b>not</b> apply on G2A.</p><a class="more" href="#refunds">Full rule &rarr;</a></div></details>
+        <details><summary><span class="chan">G2A</span><span><mark class="chg" id="chg-5">The customer wants a refund.</mark></span></summary><div class="ans"><p>Account <b>not revealed</b>: refund on the G2A platform, no questions asked. Account <b>revealed</b>: no refund, even if they threaten us.</p><a class="more" href="#g2a">Full rule &rarr;</a></div></details>
+        <details><summary><span class="chan">Website</span><span><mark class="chg" id="chg-6">The account was not delivered and the customer wants a refund.</mark></span></summary><div class="ans"><p>Aggressive customer: refund immediately. Calm customer: explain it is a backorder that can take up to 24 hours. If they still want a refund, refund. No ban either way.</p><a class="more" href="#refunds">Full rule &rarr;</a></div></details>
+        <details><summary><span class="chan">Website</span><span><mark class="chg" id="chg-7">The account does not work right after delivery.</mark></span></summary><div class="ans"><p>Within <b>2 hours</b> of delivery: check it carefully in the audit panel. Really dead or wrong region: replace immediately. Scam attempt: no replacement, no refund. After 2 hours: normal warranty rules.</p><a class="more" href="#refunds">Full rule &rarr;</a></div></details>
+        <details><summary><span class="chan">Website + G2A</span><span><mark class="chg" id="chg-8">The customer has no Order ID.</mark></span></summary><div class="ans"><p>No refund and no replacement without an Order ID. If they say someone else bought it for them and cannot give the Order ID, treat it as a likely scam.</p><a class="more" href="#refunds">Full rule &rarr;</a></div></details>
+        <details><summary><span class="chan">Website</span><span><mark class="chg" id="chg-9">We cannot deliver the replacement.</mark></span></summary><div class="ans"><p>We promise 24 to 48 hours from the Warehouse ticket. Keep the customer informed. After 5 days they can pick another game at the price they paid, within 10% (ask the manager for a new release). Refund only if the order is under 3 months old.</p><p>On G2A there is no promise and no different-game offer: the customer waits.</p><a class="more" href="#replacements">Full rule &rarr;</a></div></details>
+        <details><summary><span class="chan">All</span><span><mark class="chg" id="chg-10">I think the customer is a scammer.</mark></span></summary><div class="ans"><p>No refund and no replacement. Website: ban in Warehouse and add to the matching group. G2A: we cannot ban, just refuse the replacement. Kinguin: tell someone in a higher role.</p><a class="more" href="#refunds">Full rule &rarr;</a></div></details>
+        <details><summary><span class="chan">Website + Kinguin</span><span><mark class="chg" id="chg-11">I think the customer is a reseller.</mark></span></summary><div class="ans"><p>Website: ask them to stop, recover the account if delivered, force refund, tell them they will be blacklisted, ban in Warehouse with the reseller group. Kinguin: check the Reseller Kinguin group in Warehouse, recover the account, send the template, then refund.</p><a class="more" href="#kinguin">Full rule &rarr;</a></div></details>
+        <details><summary><span class="chan">Live Chat</span><span><mark class="chg" id="chg-12">The customer is insulting me.</mark></span></summary><div class="ans"><p>Boundary message, then one final warning, then ban in Live Chat. Slurs or sexual comments: ban right away. You can always pass the chat to a colleague with a Discord message, no penalty.</p><a class="more" href="#abuse">Full rule &rarr;</a></div></details>
+        <details><summary><span class="chan">Kinguin</span><span><mark class="chg" id="chg-13">How fast do I have to answer a Kinguin ticket?</mark></span></summary><div class="ans"><p>As soon as possible, at most within <b>24 hours</b>. If we miss it, Kinguin may refund the customer automatically. A customer can get at most two replacements per product.</p><a class="more" href="#kinguin">Full rule &rarr;</a></div></details>
+        <details><summary><span class="chan">Website</span><span><mark class="chg" id="chg-14">The customer already opened a dispute or a chargeback.</mark></span></summary><div class="ans"><p>Nothing to hand off. The dedicated operator handles it on the payment processor site. Stay polite in the chat and promise nothing.</p><a class="more" href="#refunds">Full rule &rarr;</a></div></details>
+        <p class="faq-none" id="faqnone">Nothing found. Ask in the SOP channel, and the answer will be added here.</p>
+    </section>
 
     <section class="card" id="refunds">
       <h2>Refunds and delivery</h2>
@@ -422,7 +453,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <ul class="rules">
         <li>Verify the order and the account before you handle any ticket. Make no assumptions about the customer or the account history before checking.</li>
         <li>Write formally, clearly and professionally.</li>
-        <li><mark class="chg" id="chg-2">We are more tolerant with Kinguin customers than on our website. Scammers are the exception: if you find a real scammer, tell someone in a higher role.</mark></li>
+        <li>We are more tolerant with Kinguin customers than on our website. Scammers are the exception: if you find a real scammer, tell someone in a higher role.</li>
         <li>Review every ticket and resolve it, or at least answer it, as quickly as possible. No ticket is left unattended.</li>
         <li>A customer can get at most <span class="mgr">two replacements</span> for the same product. <span class="tag mgr-tag">Manager can change</span></li>
       </ul>
@@ -436,7 +467,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <p>When a replacement is agreed during the conversation:</p>
       <ol class="rules">
         <li>Tell the customer to escalate the ticket to Kinguin Support.</li>
-        <li><mark class="chg" id="chg-1">Tell someone in a higher role, who opens the replacement ticket in Zendesk.</mark></li>
+        <li>Tell someone in a higher role, who opens the replacement ticket in Zendesk.</li>
       </ol>
 
       <h3>Refunds</h3>
@@ -608,6 +639,17 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
   var cb = document.getElementById("chgbox");
   cb.addEventListener("change", function () {
     document.body.setAttribute("data-chg", cb.checked ? "on" : "off");
+  });
+  var q = document.getElementById("faqq");
+  if (q) q.addEventListener("input", function () {
+    var t = q.value.trim().toLowerCase(), shown = 0;
+    document.querySelectorAll("#faq details").forEach(function (d) {
+      var hit = !t || d.textContent.toLowerCase().indexOf(t) !== -1;
+      d.style.display = hit ? "" : "none";
+      if (hit) shown++;
+      d.open = !!t && hit;
+    });
+    document.getElementById("faqnone").style.display = shown ? "none" : "block";
   });
 })();
 </script>
