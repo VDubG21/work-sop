@@ -201,11 +201,9 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <h2>What changed in this revision</h2>
       <p>17 Oct 2026. The same changes are highlighted in blue on the page.</p>
       <ul>
-        <li>Answers to open questions 9 to 17 and 19 applied. Still open: the Zendesk contact for Kinguin, the Blacklist group (Manu), whether the angry-customer exception and scammer rules apply on Kinguin, and the decision log.</li>
-        <li>Refunds and delivery: no ban after a force refund or an exception refund. Verifying an account includes checking whether the console was activated.</li>
-        <li>G2A orders: no response deadline on G2A or the website; 2FA code first, then verify and replace; an email change is worked around; refunds are made on the G2A platform by the operator; scammers cannot be banned, but the replacement is refused.</li>
-        <li>Kinguin orders: answer as soon as possible, at most within 24 hours. New part on resellers: check the Reseller Kinguin group in Warehouse, recover the account, send the template, then refund. Recovering all of a reseller's accounts needs approval from a higher role.</li>
-        <li>Removed the tagging of abusive chats and the document owner.</li>
+        <li>Kinguin replacements: the operator tells someone in a higher role, who opens the replacement ticket in Zendesk.</li>
+        <li>Kinguin general rules: we are more tolerant with Kinguin customers, but not with scammers. A real scammer is reported to someone in a higher role.</li>
+        <li>Both open items closed. Still open: the Blacklist group (Manu) and the decision log.</li>
       </ul>
     </div>
     <!--/CHANGES-->
@@ -235,9 +233,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       </ol>
       <p class="sub">Still open, needs your answer</p>
       <ol class="open-list" start="9">
-        <li class="open-item"><mark class="chg" id="chg-1">Kinguin: name who opens replacement tickets in Zendesk.</mark></li>
-        <li class="open-item">Set up the Blacklist group in PrestaShop, so a block actually stops a customer from buying. <mark class="chg" id="chg-2">Manu will set it up.</mark></li>
-        <li class="open-item"><mark class="chg" id="chg-3">Kinguin: do the website refund exception (angry customer) and the scammer rules also apply on Kinguin orders?</mark></li>
+        <li class="open-item">Set up the Blacklist group in PrestaShop, so a block actually stops a customer from buying. Manu will set it up.</li>
         <li class="open-item">Decision log: confirm the rows marked "To be confirmed", and say whether the newer decisions should be logged in your name.</li>
       </ol>
     </div>
@@ -262,8 +258,8 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <h3>The account was delivered</h3>
       <div class="ladder">
         <div class="step"><div class="n">1</div><div class="t"><b>Explain, don't refund</b><span>Tell the customer that under our TOS we can't refund. Explain that it works the same as buying a key, and that the accounts are new. Most customers understand and agree.</span></div></div>
-        <div class="step"><div class="n">2</div><div class="t"><b>If they keep insisting, verify the account</b><span>Check whether it was used <mark class="chg" id="chg-6">(this includes whether the console was activated)</mark>, whether we can recover it, and whether the customer is trying to get a free game.</span></div></div>
-        <div class="step"><div class="n">3</div><div class="t"><b>Not used and recoverable: make an exception</b><span>Tell the customer we are making an exception, then issue the refund. You decide this yourself. <mark class="chg" id="chg-4">No ban: the refund is the end of it.</mark></span></div></div>
+        <div class="step"><div class="n">2</div><div class="t"><b>If they keep insisting, verify the account</b><span>Check whether it was used (this includes whether the console was activated), whether we can recover it, and whether the customer is trying to get a free game.</span></div></div>
+        <div class="step"><div class="n">3</div><div class="t"><b>Not used and recoverable: make an exception</b><span>Tell the customer we are making an exception, then issue the refund. You decide this yourself. No ban: the refund is the end of it.</span></div></div>
         <div class="step"><div class="n">4</div><div class="t"><b>Used, or not recoverable: no refund</b><span>The answer stays no, unless the customer meets one of the angry customer triggers below.</span></div></div>
       </div>
 
@@ -283,7 +279,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <div class="rule-grid">
         <div class="rule">
           <strong>Customer is aggressive</strong>
-          <p>Refund immediately, no questions asked. We can also force refund an aggressive customer who did not ask for a refund, as long as the account was not delivered. This has happened in rare cases. <mark class="chg" id="chg-5">No ban: the refund is the end of it.</mark></p>
+          <p>Refund immediately, no questions asked. We can also force refund an aggressive customer who did not ask for a refund, as long as the account was not delivered. This has happened in rare cases. No ban: the refund is the end of it.</p>
         </div>
         <div class="rule">
           <strong>Customer is calm</strong>
@@ -349,11 +345,11 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <p>Within 3 months of delivery the account should still work exactly as it was sent, and in practice almost all of them do. After 3 months a replacement may really be needed. In both cases the operator checks the account first and decides which of these it is:</p>
       <ul class="rules">
         <li><b>Still working:</b> no replacement.</li>
-        <li><b>Working, but the customer changed the email, or otherwise manipulated the account:</b> the warranty is void, because we can no longer verify that it is the account we sold. No replacement, and no refund. If you find this clearly, the answer is final. Changing the password alone does <b>not</b> void the warranty. On G2A orders <mark class="chg" id="chg-7">we try to work around an email change</mark> (see G2A orders).</li>
+        <li><b>Working, but the customer changed the email, or otherwise manipulated the account:</b> the warranty is void, because we can no longer verify that it is the account we sold. No replacement, and no refund. If you find this clearly, the answer is final. Changing the password alone does <b>not</b> void the warranty. On G2A orders we try to work around an email change (see G2A orders).</li>
         <li><b>Not working from our side:</b> replacement.</li>
       </ul>
       <div class="callout">
-        <p><b>Zero tolerance for scammers.</b> If the customer is trying to get a free game, there is no replacement and we never refund. Then ban them in Warehouse, add them to the matching group and block them in PrestaShop, as described in Refunds and delivery. <mark class="chg" id="chg-8">On G2A orders we cannot ban (the G2A platform does not allow it), but the replacement is still refused.</mark></p>
+        <p><b>Zero tolerance for scammers.</b> If the customer is trying to get a free game, there is no replacement and we never refund. Then ban them in Warehouse, add them to the matching group and block them in PrestaShop, as described in Refunds and delivery. On G2A orders we cannot ban (the G2A platform does not allow it), but the replacement is still refused.</p>
       </div>
 
       <h3>Opening a ticket</h3>
@@ -380,14 +376,14 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <p class="lede">G2A orders keep the warranty even when the buyer changed the credentials.</p>
 
       <ul class="rules">
-        <li>We don't mention the warranty first and we don't rush to replace. <b>Start with assistance.</b> <mark class="chg" id="chg-9">If the 2FA code does not solve it, verify the account, then replace.</mark></li>
+        <li>We don't mention the warranty first and we don't rush to replace. <b>Start with assistance.</b> If the 2FA code does not solve it, verify the account, then replace.</li>
         <li><span class="mgr">Assistance means giving the customer the 2FA code needed to log in to the account. It does not include a replacement.</span> <span class="tag mgr-tag">Manager can change</span></li>
         <li>G2A's own message asks buyers to change the credentials. That voids the warranty we give on our site because we can no longer verify the account, but our manager decided to still offer assistance and warranty on G2A orders.</li>
         <li>Replacements on G2A orders are done by the operator, the same as on our own site, including when the credentials were changed. Before replacing, the operator verifies the account (see "Verify before you replace" in Replacements). The ticket is created in Warehouse, with the Purchase verification tool, exactly as on the website.</li>
-        <li>If the customer changed the email on a G2A order, the warranty is not void. <mark class="chg" id="chg-10">We try to work around it.</mark> The password alone never counts.</li>
-        <li><mark class="chg" id="chg-11">There is no response deadline on G2A, and none on our website either.</mark> <mark class="chg" id="chg-12">On G2A,</mark> the 24 to 48 hour promise and the different-game offer from Replacements do not apply here. The customer can wait longer until we have a replacement.</li>
-        <li>Refund on a G2A order: if the account was not revealed, refund, no questions asked. If the account was revealed, we do not refund, even if the customer threatens us. <mark class="chg" id="chg-13">The refund is made on the G2A platform, by the operator.</mark></li>
-        <li><mark class="chg" id="chg-14">We cannot ban customers on the G2A platform. If a G2A customer is a scammer, we refuse the replacement.</mark></li>
+        <li>If the customer changed the email on a G2A order, the warranty is not void. We try to work around it. The password alone never counts.</li>
+        <li>There is no response deadline on G2A, and none on our website either. On G2A, the 24 to 48 hour promise and the different-game offer from Replacements do not apply here. The customer can wait longer until we have a replacement.</li>
+        <li>Refund on a G2A order: if the account was not revealed, refund, no questions asked. If the account was revealed, we do not refund, even if the customer threatens us. The refund is made on the G2A platform, by the operator.</li>
+        <li>We cannot ban customers on the G2A platform. If a G2A customer is a scammer, we refuse the replacement.</li>
       </ul>
 
       <div class="callout">
@@ -400,13 +396,14 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <p class="lede">Kinguin tickets have a deadline. Verify first, answer formally, and never leave a ticket unattended.</p>
 
       <div class="callout warn">
-        <p><b>Answer within the Kinguin SLA: <mark class="chg" id="chg-15">as soon as possible, and at most within 24 hours</mark>.</b> If we miss it, Kinguin may refund the customer automatically, even when the refund is not justified.</p>
+        <p><b>Answer within the Kinguin SLA: as soon as possible, and at most within 24 hours.</b> If we miss it, Kinguin may refund the customer automatically, even when the refund is not justified.</p>
       </div>
 
       <h3>General rules</h3>
       <ul class="rules">
         <li>Verify the order and the account before you handle any ticket. Make no assumptions about the customer or the account history before checking.</li>
         <li>Write formally, clearly and professionally.</li>
+        <li><mark class="chg" id="chg-2">We are more tolerant with Kinguin customers than on our website. Scammers are the exception: if you find a real scammer, tell someone in a higher role.</mark></li>
         <li>Review every ticket and resolve it, or at least answer it, as quickly as possible. No ticket is left unattended.</li>
         <li>A customer can get at most <span class="mgr">two replacements</span> for the same product. <span class="tag mgr-tag">Manager can change</span></li>
       </ul>
@@ -420,7 +417,7 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       <p>When a replacement is agreed during the conversation:</p>
       <ol class="rules">
         <li>Tell the customer to escalate the ticket to Kinguin Support.</li>
-        <li>Tell the person who handles tickets in Zendesk, so they can open the replacement ticket. <span class="tag open-tag">Open</span> Who this is should be named here.</li>
+        <li><mark class="chg" id="chg-1">Tell someone in a higher role, who opens the replacement ticket in Zendesk.</mark></li>
       </ol>
 
       <h3>Refunds</h3>
@@ -442,23 +439,23 @@ footer { color: var(--ink-soft); font-size: 14px; text-align: center; margin-top
       </div>
       <p>Each final decision depends on the specific case.</p>
 
-      <h3><mark class="chg" id="chg-16">Resellers on Kinguin</mark></h3>
-      <p><mark class="chg" id="chg-17">For every Kinguin ticket, check the order in Warehouse: the order details show whether the customer is in the <b>Reseller Kinguin</b> group. If they are:</mark></p>
+      <h3>Resellers on Kinguin</h3>
+      <p>For every Kinguin ticket, check the order in Warehouse: the order details show whether the customer is in the <b>Reseller Kinguin</b> group. If they are:</p>
       <ol class="rules">
-        <li><mark class="chg" id="chg-18"><b>Recover the account</b> for the order the ticket was opened for.</mark></li>
-        <li><mark class="chg" id="chg-19"><b>Send the template message</b> below to the customer.</mark></li>
-        <li><mark class="chg" id="chg-20"><b>Refund:</b> wait for the customer's reply, then issue the full refund for the order.</mark></li>
+        <li><b>Recover the account</b> for the order the ticket was opened for.</li>
+        <li><b>Send the template message</b> below to the customer.</li>
+        <li><b>Refund:</b> wait for the customer's reply, then issue the full refund for the order.</li>
       </ol>
       <div class="callout">
-        <p><b><mark class="chg" id="chg-21">Template message</mark></b></p>
-        <p><mark class="chg" id="chg-22">Hello,</mark></p>
-        <p><mark class="chg" id="chg-23">Thank you for your message.</mark></p>
-        <p><mark class="chg" id="chg-24">We would like to clarify that our products and services are intended for end customers only. We provide the necessary support and assistance directly to the customer who purchases and uses the product.</mark></p>
-        <p><mark class="chg" id="chg-25">We do not sell to resellers, suppliers, or customers purchasing our products for the purpose of reselling them to third parties. Because of this, we will proceed with a full refund for this order.</mark></p>
-        <p><mark class="chg" id="chg-26">We kindly ask you not to place any further orders with us for resale purposes, as we are unable to support this type of transaction.</mark></p>
-        <p><mark class="chg" id="chg-27">We appreciate your understanding and cooperation.</mark></p>
+        <p><b>Template message</b></p>
+        <p>Hello,</p>
+        <p>Thank you for your message.</p>
+        <p>We would like to clarify that our products and services are intended for end customers only. We provide the necessary support and assistance directly to the customer who purchases and uses the product.</p>
+        <p>We do not sell to resellers, suppliers, or customers purchasing our products for the purpose of reselling them to third parties. Because of this, we will proceed with a full refund for this order.</p>
+        <p>We kindly ask you not to place any further orders with us for resale purposes, as we are unable to support this type of transaction.</p>
+        <p>We appreciate your understanding and cooperation.</p>
       </div>
-      <p><mark class="chg" id="chg-28">Recovering <b>all</b> of a reseller's accounts and refunding them when they open a ticket must first be approved by someone in a higher role. The operator does not do it alone.</mark></p>
+      <p>Recovering <b>all</b> of a reseller's accounts and refunding them when they open a ticket must first be approved by someone in a higher role. The operator does not do it alone.</p>
 
       <h3>Early account recovery</h3>
       <p>If the ticket is about an account that was resold about three months ago, and its next scheduled recovery is due within the next few days, you can recover it early:</p>
